@@ -40,6 +40,25 @@ padding: 8px;
 border-radius: 5px;
 }
 
+.button2{
+    border: none !important;;
+background-color: rgb(250, 197, 21);
+padding: 8px;
+border-radius: 5px;
+margin-left: 570px;
+margin-top: 25px;
+}
+
+.button2:hover{
+    border: none !important;;
+    background-color: rgb(53, 53, 51);
+    color: rgb(250, 197, 21);
+padding: 8px;
+border-radius: 5px;
+margin-left: 570px;
+margin-top: 25px;
+}
+
 
 .text{
     margin-top: 100px;

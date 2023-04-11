@@ -75,7 +75,11 @@ export default function Voil() {
         Si iscriva qui per ricevere offerte personalizzate e idee di viaggio
         direttamente nella sua casella di posta elettronica.
       </p>
-
+      <Link to='/iscriva'>
+<button className={style.button2}>
+  iscriva
+</button>
+</Link>
       <br />
 
       <h4 className={style.h4}>BISOGNO DI AIUTO PER LA PRENOTAZIONE?</h4>
