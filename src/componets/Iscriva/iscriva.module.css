@@ -1,0 +1,57 @@
+.container1 {
+  background-color: whitesmoke;
+  width: 30%;
+  margin-left: 750px;
+  margin-bottom: 90px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+ margin-top: 150px;
+}
+
+ .container2 {
+  background-color: whitesmoke;
+  width: 30%;
+  margin-left: 100px;
+ margin-bottom: 50px;
+
+  font-size: 18px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: -280px;
+  }
+
+.popup{
+  background-color:rgb(250, 197, 21);
+  width: 30%;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-left: 750px;
+  margin-top: -200px;
+
+}
+
+.logo{
+  width: 30%;
+  margin-top: 10px;
+  margin-left: 90px;
+}
+
+.boton{
+  background-color: rgb(53, 53, 51);
+  color:rgb(250, 197, 21);
+  border:none;
+  padding: 5px;
+  margin-left: 3px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+
+
+
+
+ 
+   

@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:  100%;
+    background-color: rgb(24, 23, 23);
+    
+  }
+  
+  .logo {
+    width: 21%;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 450px;
+  }
+  
+  .texto {
+    text-align: justify;
+    width: 50%;
+    margin-top: -35px;
+    margin-bottom: 10px;
+    color: rgb(250, 197, 21);
+    font-size: 14px;
+  }
+  
+  .form {
+    align-items: center;
+    color: rgb(250, 197, 21);
+  }
+  
+  .form label {
+    display: block;
+    max-width: 300px;
+    margin-bottom: 10px;
+    opacity: 80%;
+  }
+  
+  .form input {
+    display: block;
+    max-width: 300px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: none;
+  }
+
+  .registro{
+    border-radius: 10px;
+    margin-left: 48px;
+    margin-bottom: 9px;
+    background-color: rgb(53, 53, 51);
+    border: none;
+    color: rgb(250, 197, 21);
+
+  }
+  
