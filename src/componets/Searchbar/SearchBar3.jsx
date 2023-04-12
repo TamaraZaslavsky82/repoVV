@@ -21,7 +21,7 @@ function SearchBar3() {
       ? `${totalPassengers} ${
           totalPassengers === 1 ? "Passeggero" : "Passeggeri"
         }`
-      : "Cantidad de pasajeros";
+      : "Numero di passegger";
 
   return (
     <div>

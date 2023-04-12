@@ -114,7 +114,7 @@
     display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
   }
   .containerC{
-      margin-top: -30PX;
+      margin-top: -25PX;
       margin-left: 200PX;
       margin-bottom: 30PX;
   }

@@ -10,12 +10,14 @@ import SearchBar3 from "../Searchbar/SearchBar3";
 export default function Voil() {
   const [soloAndataChecked, setSoloAndataChecked] = useState(false);
   const [andataERitornoChecked, setAndataERitornoChecked] = useState(false);
+  const [searchBarDataEnabled, setSearchBarDataEnabled] = useState(true);
 
   const handleSoloAndataChange = () => {
     setSoloAndataChecked(!soloAndataChecked);
     if (andataERitornoChecked) {
       setAndataERitornoChecked(false);
     }
+    handleSearchBarDataEnableChange(!soloAndataChecked);
   };
 
   const handleAndataERitornoChange = () => {
@@ -23,31 +25,36 @@ export default function Voil() {
     if (soloAndataChecked) {
       setSoloAndataChecked(false);
     }
+    handleSearchBarDataEnableChange(soloAndataChecked);
+  };
+
+  const handleSearchBarDataEnableChange = (enable) => {
+    setSearchBarDataEnabled(enable);
   };
 
   return (
     <div>
       <div className={style.container}>
-      <div>
-  <label className={style.cheack2}>
-    <input
-      type="checkbox"
-      checked={soloAndataChecked}
-      onChange={handleSoloAndataChange}
-    />
-     &nbsp;Solo Andata
-  </label>
-</div>
-<div className={style.containerC}>
-  <label className={style.cheack1}>
-    <input
-      type="checkbox"
-      checked={andataERitornoChecked}
-      onChange={handleAndataERitornoChange}
-    />
-    &nbsp;Andata e ritorno
-  </label>
-</div>
+        <div>
+          <label className={style.cheack2}>
+            <input
+              type="checkbox"
+              checked={soloAndataChecked}
+              onChange={handleSoloAndataChange}
+            />
+            &nbsp; Andata e ritorno
+            <div className={style.containerC}>
+              <label className={style.cheack1}>
+                <input
+                  type="checkbox"
+                  checked={andataERitornoChecked}
+                  onChange={handleAndataERitornoChange}
+                />
+                &nbsp;Solo Andata
+              </label>
+            </div>
+          </label>
+        </div>
         <div className={style.search1}>
           <SearchBar />
         </div>
@@ -55,9 +62,11 @@ export default function Voil() {
         <div className={style.search}>
           <SearchBar2 />
         </div>
-        <div className={style.datar}>
-          <SearchBarData />
-        </div>
+        {searchBarDataEnabled && (
+          <div className={style.datar}>
+            <SearchBarData />
+          </div>
+        )}
         <div className={style.dataa}>
           <SearchBarData2 />
         </div>
