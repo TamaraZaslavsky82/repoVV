@@ -28,26 +28,26 @@ export default function Voil() {
   return (
     <div>
       <div className={style.container}>
-        <div >
-          <label className={style.cheack2}>
-            <input
-              type="checkbox"
-              checked={soloAndataChecked}
-              onChange={handleSoloAndataChange}
-            />
-            Solo Andata
-          </label>
-        </div>
-        <div className={style.containerC}>
-          <label className={style.cheack1}>
-            <input
-              type="checkbox"
-              checked={andataERitornoChecked}
-              onChange={handleAndataERitornoChange}
-            />
-            Andata e ritorno
-          </label>
-        </div>
+      <div>
+  <label className={style.cheack2}>
+    <input
+      type="checkbox"
+      checked={soloAndataChecked}
+      onChange={handleSoloAndataChange}
+    />
+     &nbsp;Solo Andata
+  </label>
+</div>
+<div className={style.containerC}>
+  <label className={style.cheack1}>
+    <input
+      type="checkbox"
+      checked={andataERitornoChecked}
+      onChange={handleAndataERitornoChange}
+    />
+    &nbsp;Andata e ritorno
+  </label>
+</div>
         <div className={style.search1}>
           <SearchBar />
         </div>

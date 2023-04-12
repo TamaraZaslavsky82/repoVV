@@ -109,6 +109,7 @@
   
   .cheack2 {
     color: whitesmoke;
+    
    
     display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
   }
@@ -117,4 +118,24 @@
       margin-left: 200PX;
       margin-bottom: 30PX;
   }
+  
+  input[type="checkbox"] {
+    appearance: none;
+    border: 2px solid #f4bf42;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 4px; /* Ajusta el espacio entre el borde y el contenido */
+    outline: none;
+    cursor: pointer;
+  }
+  
+  input[type="checkbox"]:checked {
+    background-color: #f4bf42;
+  }
+
+  .label-text {
+    margin-left: 10px;
+  }
+  
   
