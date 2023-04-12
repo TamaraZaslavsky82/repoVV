@@ -1,0 +1,77 @@
+
+body{
+    background-color: #E5E7E9;
+}
+
+.h2{
+    color:rgb(75, 74, 74);
+    margin-left: 160px;
+    margin-top: 90px;
+    font-size: 35px;
+}
+
+.h3{
+    color:rgb(75, 74, 74);
+    width: 85%;
+    margin-left: 160px;
+    text-align: start;
+}
+
+.billete{
+    margin-top: 50px;
+    margin-left: 230px;
+    border-radius: 15px;
+}
+
+.p1{
+    margin-top: 60px;
+    width: 70%;
+    color:rgb(75, 74, 74);
+    margin-left: 200px;
+}
+
+.h4{
+    color:rgb(75, 74, 74);
+    margin-top: 60px;
+    margin-left: 250PX;
+}
+
+.ul1{
+    color:rgb(75, 74, 74);
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-bottom: 60px;
+}
+
+.h31{
+    color:rgb(75, 74, 74);
+    width: 85%;
+    margin-left: 260px;
+    
+}
+
+.p2{
+    margin-top: 10px;
+    width: 70%;
+    color:rgb(75, 74, 74);
+    margin-left: 200px;
+}
+
+.h6{
+    margin-left: 200px;
+    color:rgb(75, 74, 74);
+}
+
+.ul2{
+    color:rgb(75, 74, 74);
+    margin-top: 30px;
+    margin-left: 300px;
+    margin-bottom: 60px;
+}
+
+.hr{
+    width: 50%;
+    margin-left: 300px;
+    border: solid 1px ;
+    margin-top: 30px;
+}
