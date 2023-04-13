@@ -71,14 +71,17 @@ export default function Voil() {
         <div className={style.search}>
           <SearchBar2 />
         </div>
-        {searchBarDataEnabled && (
+        
           <div className={style.datar}>
             <SearchBarData />
           </div>
-        )}
+        
+        {searchBarDataEnabled && (
         <div className={style.dataa}>
           <SearchBarData2 />
+          
         </div>
+        )}
         <div className={style.data3}>
           <SearchBar3 />
         </div>

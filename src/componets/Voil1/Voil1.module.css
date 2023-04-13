@@ -3,7 +3,11 @@
     padding: 35px;
     margin-top: 20px;
     margin-bottom: 20px;
+ 
+ 
   }
+  
+
   
   .data {
     margin-left: 600px;
@@ -144,3 +148,80 @@
     margin-left: -1100px;
   }
   
+  @media screen and (max-width: 768px) {
+    .data,
+    .data2,
+    .search,
+    .cerca,
+    .button2,
+    .text,
+    .p1,
+    .h4,
+    .p2,
+    .datar,
+    .dataa,
+    .data3,
+    .containerC,
+    .form {
+    margin: 0; /* eliminar los márgenes laterales */
+    }
+    
+    .data,
+    .data2 {
+    width: 100%; /* ajustar el ancho al 100% /
+    margin-left: 0; / eliminar el margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .search,
+    .search1,
+    .cerca {
+    margin: 0 auto; /* centrar horizontalmente /
+    margin-top: 20px; / agregar un margen superior /
+    margin-bottom: 10px; / agregar un margen inferior /
+    display: block; / cambiar a bloque para que ocupe todo el ancho disponible */
+    }
+    
+    .button2 {
+    margin-left: 0; /* eliminar el margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .text {
+    margin-left: 20px; /* agregar un margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .p1 {
+    margin-left: 20px; /* agregar un margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .h4 {
+    margin-left: 20px; /* agregar un margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .p2 {
+    margin-left: 20px; /* agregar un margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .datar,
+    .dataa,
+    .data3 {
+    margin: 0 auto; /* centrar horizontalmente /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    
+    .containerC {
+    margin: 0 auto; /* centrar horizontalmente /
+    margin-top: 20px; / agregar un margen superior /
+    margin-bottom: 20px; / agregar un margen inferior */
+    }
+    
+    .form {
+    margin-left: 20px; /* agregar un margen izquierdo /
+    margin-top: 20px; / agregar un margen superior */
+    }
+    }

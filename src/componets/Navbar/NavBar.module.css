@@ -1,21 +1,19 @@
 .nav {
   background-color: rgb(24, 23, 23);
   padding: 10px;
-
-  
 }
 
 .logo {
   width: 170px;
-  
+
   margin-left: 35px;
   margin-top: -40px;
- margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .registro {
   color: rgb(250, 197, 21);
-  
+
   margin-left: 50px;
   background-color: rgb(53, 53, 51);
   border: none;
@@ -28,49 +26,35 @@
   background-color: rgb(53, 53, 51);
   border: none;
 }
-.ayuda{
+.ayuda {
   color: rgb(250, 197, 21);
   margin-left: 20px;
-
 }
 
-
-.container{
+.container {
   display: flex;
-  
-  
 }
-
 
 .visti {
   color: rgb(250, 197, 21);
   margin-left: -350px;
- 
- 
 }
 
 .traduzione {
   color: rgb(250, 197, 21);
   margin-left: 200px;
- 
- 
 }
 
 .voil {
   color: rgb(250, 197, 21);
   margin-left: 100px;
+}
 
-  
-  }
-  
-  .taxi {
+.taxi {
   color: rgb(250, 197, 21);
   margin-left: 60px;
   margin-top: -5px;
- 
-  }
-
-
+}
 
 .menu3:hover .dropdown {
   display: block;
@@ -81,7 +65,7 @@
   margin: 0;
   width: 200px;
   z-index: 9999;
-  left: 400px;
+  left: 510px;
   margin-top: -1px;
 }
 
@@ -102,8 +86,6 @@
   color: white;
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -111,4 +93,36 @@ a {
 
 .dropdown {
   display: none;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .registro, .inicio {
+    margin-left: 10px;
+  }
+  
+  .menu3:hover .dropdown {
+    left: 10px;
+  }
+  
+  .visti {
+    margin-left: -200px;
+  }
+  
+  .traduzione {
+    margin-left: 50px;
+  }
+  
+  .voil {
+    margin-left: 10px;
+  }
+  
+  .taxi {
+    margin-left: 10px;
+  }
 }

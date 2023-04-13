@@ -19,9 +19,9 @@ function SearchBar3() {
   const selectedText =
     totalPassengers > 0
       ? `${totalPassengers} ${
-          totalPassengers === 1 ? "Passeggero" : "Passeggeri"
+          totalPassengers === 1 ? "Passeggero" : "PASSEGGERI"
         }`
-      : "Numero di passegger";
+      : "PASSEGGERI";
 
   return (
     <div>
@@ -32,7 +32,7 @@ function SearchBar3() {
         {menuOpen && (
           <div className={style.menu}>
             <div className={style.menuItem}>
-              <label htmlFor="adults">Adultos:</label>
+              <label htmlFor="adults" className={style.texto}>Adulti <p className={style.passager}>Più di 11 anni</p> </label>
               <div className={style.buttonsContainer}>
                 <button
                   className={style.button}
@@ -50,7 +50,7 @@ function SearchBar3() {
               </div>
             </div>
             <div className={style.menuItem}>
-              <label htmlFor="children">Niños:</label>
+              <label htmlFor="children" className={style.texto}>Bambini <p className={style.passager}>Da 2 a 11 anni</p> </label>
               <div className={style.buttonsContainer}>
                 <button
                   className={style.button}
@@ -68,7 +68,7 @@ function SearchBar3() {
               </div>
             </div>
             <div className={style.menuItem}>
-              <label htmlFor="infants">Recién nacidos:</label>
+              <label htmlFor="infants" className={style.texto}>Neonato <p className={style.passager}>Meno di 2 anni</p> </label>
               <div className={style.buttonsContainer}>
                 <button
                   className={style.button}

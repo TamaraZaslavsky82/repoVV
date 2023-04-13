@@ -16,7 +16,7 @@ const SearchBarData = () => {
         
           
           className={style.data2}
-          placeholderText="DATA DI RITORNO"
+          placeholderText="DATA DI ANDATA"
           
         />
       </div>

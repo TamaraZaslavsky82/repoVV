@@ -15,7 +15,7 @@ const SearchBarData = () => {
           onChange={date => setSelectedDate(date)}
           
           className={style.data}
-          placeholderText="DATA DI ANDATA"
+          placeholderText="DATA DI RITORNO"
           
         />
       </div>
