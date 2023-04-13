@@ -1,140 +1,129 @@
 .container {
-    background-color: rgb(53, 53, 51);
-    padding: 35px;
-    margin-top: 20px;
-    margin-bottom: 20px;
- 
- 
-  }
+  background-color: rgb(53, 53, 51);
+  padding: 35px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.data {
+  margin-left: 600px;
+  margin-top: -54px;
+  width: 63%;
+}
+
+.data2 {
+  margin-left: 747px;
+  margin-top: -55px;
+  width: 63%;
+}
+
+.search {
+  margin-left: 275px;
+  margin-top: -55px;
+  margin-right: 105px;
+}
+
+.search1 {
+  margin-right: 105px;
+}
+
+.cerca {
+  margin-left: 1130px;
+  margin-top: -42px;
+}
+
+.button {
+  border: none !important;
+  background-color: rgb(250, 197, 21);
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.button2 {
+  border: none !important;
+  background-color: rgb(250, 197, 21);
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 570px;
+  margin-top: 25px;
+}
+
+.button2:hover {
+  border: none !important;
+  background-color: rgb(53, 53, 51);
+  color: rgb(250, 197, 21);
+  padding: 8px;
+  border-radius: 5px;
+  margin-left: 570px;
+  margin-top: 25px;
+}
+
+.text {
+  margin-top: 100px;
+  margin-left: 400px;
+}
+
+.p1 {
+  margin-left: 200px;
+}
+
+.h4 {
+  margin-top: 50px;
+  margin-left: 370px;
+}
+
+.p2 {
+  margin-top: 30px;
+  margin-left: 470px;
+}
+
+.p3 {
+  margin-left: 550px;
+  margin-top: 50px;
+  padding: 10px;
+  background-color: rgb(250, 197, 21);
+  width: 10%;
+  border-radius: 5px;
+}
+
+.p3:hover {
+  background-color: rgb(53, 53, 51);
+  color: whitesmoke;
+}
+
+.datar {
+  margin-left: 560px;
+  margin-top: -57px;
+}
+.dataa {
+  margin-left: 730px;
+  margin-top: -60px;
+}
+.data3 {
+  margin-left: 910px;
+  margin-top: -53px;
+}
+
+.cheack1 {
+  color: whitesmoke;
+
+  display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
+  
+}
+
+.cheack2 {
+  color: whitesmoke;
   
 
-  
-  .data {
-    margin-left: 600px;
-    margin-top: -54px;
-    width: 63%;
-  }
-  
-  .data2 {
-    margin-left: 747px;
-    margin-top: -55px;
-    width: 63%;
-  }
-  
-  .search {
-    margin-left: 275px;
-    margin-top: -55px;
-    margin-right: 105px;
-  }
-  
-  .search1 {
-    margin-right: 105px;
-  }
-  
-  .cerca {
-    margin-left: 1130px;
-    margin-top: -42px;
-  }
-  .button {
-    border: none !important;
-    background-color: rgb(250, 197, 21);
-    padding: 8px;
-    border-radius: 5px;
-    margin-left: 40px;
-    margin-top: 10px;
-  }
-  
-  .button2 {
-    border: none !important;
-    background-color: rgb(250, 197, 21);
-    padding: 8px;
-    border-radius: 5px;
-    margin-left: 570px;
-    margin-top: 25px;
-  }
-  
-  .button2:hover {
-    border: none !important;
-    background-color: rgb(53, 53, 51);
-    color: rgb(250, 197, 21);
-    padding: 8px;
-    border-radius: 5px;
-    margin-left: 570px;
-    margin-top: 25px;
-  }
-  
-  .text {
-    margin-top: 100px;
-    margin-left: 400px;
-  }
-  .p1 {
-    margin-left: 200px;
-  }
-  .h4 {
-    margin-top: 50px;
-    margin-left: 370px;
-  }
-  
-  .p2 {
-    margin-top: 30px;
-    margin-left: 470px;
-  }
-  
-  .p3 {
-    margin-left: 550px;
-    margin-top: 50px;
-    padding: 10px;
-    background-color: rgb(250, 197, 21);
-    width: 10%;
-    border-radius: 5px;
-  }
-  .p3:hover {
-    background-color: rgb(53, 53, 51);
-    color: whitesmoke;
-  }
-  
-  .datar {
-    margin-left: 560px;
-    margin-top: -57px;
-  }
-  .dataa {
-    margin-left: 730px;
-    margin-top: -60px;
-  }
-  .data3 {
-    margin-left: 910px;
-    margin-top: -53px;
-  }
-  
-  .cheack1 {
-    color: whitesmoke;
-  
-    display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
-    
-  }
-  
-  .cheack2 {
-    color: whitesmoke;
-    
-   
-    display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
-  }
-  .containerC{
-      margin-top: -25PX;
-      margin-left: 200PX;
-      margin-bottom: 30PX;
-  }
-  
-  input[type="checkbox"] {
-    appearance: none;
-    border: 2px solid #f4bf42;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    padding: 4px; /* Ajusta el espacio entre el borde y el contenido */
-    outline: none;
-    cursor: pointer;
-  }
+  display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
+}
+.containerC{
+    margin-top: -25PX;
+    margin-left: 200PX;
+    margin-bottom: 30PX;
+}
   
   input[type="checkbox"]:checked {
     background-color: #f4bf42;
@@ -148,80 +137,177 @@
     margin-left: -1100px;
   }
   
-  @media screen and (max-width: 768px) {
-    .data,
-    .data2,
-    .search,
-    .cerca,
-    .button2,
-    .text,
-    .p1,
-    .h4,
-    .p2,
-    .datar,
-    .dataa,
-    .data3,
-    .containerC,
-    .form {
-    margin: 0; /* eliminar los márgenes laterales */
+  @media only screen and (max-width: 600px) {
+    .data {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
     }
     
-    .data,
     .data2 {
-    width: 100%; /* ajustar el ancho al 100% /
-    margin-left: 0; / eliminar el margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
     }
     
-    .search,
-    .search1,
+    .search {
+      margin-left: 0;
+      margin-top: 10px;
+      margin-right: 0;
+    }
+    
     .cerca {
-    margin: 0 auto; /* centrar horizontalmente /
-    margin-top: 20px; / agregar un margen superior /
-    margin-bottom: 10px; / agregar un margen inferior /
-    display: block; / cambiar a bloque para que ocupe todo el ancho disponible */
+      margin-left: 0;
+      margin-top: 10px;
     }
     
     .button2 {
-    margin-left: 0; /* eliminar el margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-left: 0;
+      margin-top: 10px;
     }
     
     .text {
-    margin-left: 20px; /* agregar un margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
-    }
-    
-    .p1 {
-    margin-left: 20px; /* agregar un margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-top: 50px;
+      margin-left: 0;
     }
     
     .h4 {
-    margin-left: 20px; /* agregar un margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-top: 30px;
+      margin-left: 0;
     }
     
     .p2 {
-    margin-left: 20px; /* agregar un margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-top: 20px;
+      margin-left: 0;
     }
     
-    .datar,
-    .dataa,
+    .datar {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    
+    .dataa {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+    
     .data3 {
-    margin: 0 auto; /* centrar horizontalmente /
-    margin-top: 20px; / agregar un margen superior */
+      margin-left: 0;
+      margin-top: 10px;
     }
     
     .containerC {
-    margin: 0 auto; /* centrar horizontalmente /
-    margin-top: 20px; / agregar un margen superior /
-    margin-bottom: 20px; / agregar un margen inferior */
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 20px;
     }
     
     .form {
-    margin-left: 20px; /* agregar un margen izquierdo /
-    margin-top: 20px; / agregar un margen superior */
+      margin-left: 0;
     }
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .data {
+      margin-left: 150px;
+      margin-top: -54px;
+      width: 63%;
     }
+    
+    .data2 {
+      margin-left: 290px;
+      margin-top: -55px;
+      width: 63%;
+    }
+    
+    .search {
+      margin-left: 75px;
+      margin-top: -55px;
+      margin-right: 50px;
+    }
+    
+    .cerca {
+      margin-left: 560px;
+      margin-top: -42px;
+    }
+    
+    .button2 {
+      margin-left: 570px;
+      margin-top: 25px;
+    }
+    
+    .text {
+      margin-top: 100px;
+      margin-left: 300px;
+    }
+    
+    .h4 {
+      margin-top: 50px;
+      margin-left: 270px;
+    }
+    
+    .p2 {
+      margin-top: 30px;
+      margin-left: 370px;
+    }
+    
+    .datar {
+      margin-left: 380px;
+      margin-top: -57px;
+    }
+    
+    .dataa {
+      margin-left: 550px;
+      margin-top: -60px;
+    }
+    
+    .data3 {
+      margin-left: 730px;
+      margin-top: -53px;
+    }
+    
+    .containerC {
+      margin-left: 200px;
+      margin-top: -25px;
+      margin-bottom: 30px;
+    }
+    
+    .form {
+      margin-left: -600px;
+    }
+  }
+  
+  /* Estilos para pantallas grandes */
+@media (min-width: 1200px) {
+  /* Ajustar margenes */
+  .container {
+    margin: 50px;
+  }
+  
+  /* Cambiar disposición de secciones */
+  .data {
+    float: left;
+    width: 60%;
+  }
+  
+  .data2 {
+    float: right;
+    width: 35%;
+  }
+  
+  /* Ajustar tamaño de fuente */
+  .text {
+    font-size: 24px;
+  }
+  
+  /* Ajustar tamaño de botones */
+  .button {
+    padding: 12px 24px;
+  }
+  
+  /* Ajustar tamaño de imágenes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
