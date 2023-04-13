@@ -36,6 +36,8 @@
     background-color: rgb(250, 197, 21);
     padding: 8px;
     border-radius: 5px;
+    margin-left: 40px;
+    margin-top: 10px;
   }
   
   .button2 {
@@ -138,4 +140,7 @@
     margin-left: 10px;
   }
   
+  .form{
+    margin-left: -1100px;
+  }
   

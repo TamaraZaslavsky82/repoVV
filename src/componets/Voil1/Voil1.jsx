@@ -6,18 +6,31 @@ import SearchBarData from "../Searchbar/SearchBarData";
 import SearchBar2 from "../Searchbar/SearchBar2";
 import SearchBarData2 from "../Searchbar/SearchBarData2";
 import SearchBar3 from "../Searchbar/SearchBar3";
-
+import Form from "../Form/Form";
+  
 export default function Voil() {
   const [soloAndataChecked, setSoloAndataChecked] = useState(false);
   const [andataERitornoChecked, setAndataERitornoChecked] = useState(false);
   const [searchBarDataEnabled, setSearchBarDataEnabled] = useState(true);
+
+  const [mostrarFormulario, setMostrarFormulario] = useState(false);
+ 
+
+  const handleCercaClick = () => {
+    setMostrarFormulario(true);
+  };
+
+  const handleFormularioSubmit = (datos) => {
+    
+    setMostrarFormulario(false);
+  };
 
   const handleSoloAndataChange = () => {
     setSoloAndataChecked(!soloAndataChecked);
     if (andataERitornoChecked) {
       setAndataERitornoChecked(false);
     }
-    handleSearchBarDataEnableChange(!soloAndataChecked);
+    setSearchBarDataEnabled(false); // establece searchBarDataEnabled en false cuando se selecciona "solo andata"
   };
 
   const handleAndataERitornoChange = () => {
@@ -25,11 +38,7 @@ export default function Voil() {
     if (soloAndataChecked) {
       setSoloAndataChecked(false);
     }
-    handleSearchBarDataEnableChange(soloAndataChecked);
-  };
-
-  const handleSearchBarDataEnableChange = (enable) => {
-    setSearchBarDataEnabled(enable);
+    setSearchBarDataEnabled(true); // establece searchBarDataEnabled en true cuando se selecciona "andata e ritorno"
   };
 
   return (
@@ -39,16 +48,16 @@ export default function Voil() {
           <label className={style.cheack2}>
             <input
               type="checkbox"
-              checked={soloAndataChecked}
-              onChange={handleSoloAndataChange}
+              checked={andataERitornoChecked}
+              onChange={handleAndataERitornoChange}
             />
             &nbsp; Andata e ritorno
             <div className={style.containerC}>
               <label className={style.cheack1}>
                 <input
                   type="checkbox"
-                  checked={andataERitornoChecked}
-                  onChange={handleAndataERitornoChange}
+                  checked={soloAndataChecked}
+                  onChange={handleSoloAndataChange}
                 />
                 &nbsp;Solo Andata
               </label>
@@ -73,9 +82,14 @@ export default function Voil() {
         <div className={style.data3}>
           <SearchBar3 />
         </div>
-        <div className={style.cerca}>
-<button className={style.button}>Cerca</button>
-</div>
+        <div >
+        {mostrarFormulario ? (
+        <Form  className={style.form} onSubmit={handleFormularioSubmit} />
+      ) : (
+        <button className={style.button}onClick={handleCercaClick}>Cerca</button>
+      )}
+          
+        </div>
       </div>
 
       <h2 className={style.text}>È alla ricerca di offerte speciali??</h2>
@@ -84,11 +98,9 @@ export default function Voil() {
         Si iscriva qui per ricevere offerte personalizzate e idee di viaggio
         direttamente nella sua casella di posta elettronica.
       </p>
-      <Link to='/iscriva'>
-<button className={style.button2}>
-  iscriva
-</button>
-</Link>
+      <Link to="/iscriva">
+        <button className={style.button2}>iscriva</button>
+      </Link>
       <br />
 
       <h4 className={style.h4}>BISOGNO DI AIUTO PER LA PRENOTAZIONE?</h4>

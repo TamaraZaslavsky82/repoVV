@@ -1,0 +1,15 @@
+.form{
+    margin-top: 30px;
+}
+
+.nombre{
+    color:whitesmoke;
+    margin-left: 20px;
+}
+
+.boton{
+    margin-left: 10px;
+    border: none;
+    background-color: rgb(250, 197, 21);
+    border-radius: 5px;
+}
