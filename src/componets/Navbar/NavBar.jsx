@@ -21,7 +21,9 @@ export default function NavBar() {
         <Link to="/Voil">
           <a className={style.voil}>Voil</a>
         </Link>
- 
+        <Link to="/hotel">
+          <a className={style.voil}>Hotel</a>
+        </Link>
         <Link to="/taxi">
           <a className={style.taxi}>Taxi da / per l' aeroporto</a>
         </Link>
