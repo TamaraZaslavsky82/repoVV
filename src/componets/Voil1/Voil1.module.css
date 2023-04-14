@@ -41,6 +41,9 @@
   margin-left: 570px;
   margin-top: 25px;
 }
+.containerB{
+  margin-top: -35px;
+}
 
 .button2:hover {
   border: none !important;
@@ -103,6 +106,22 @@
 
   display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
   
+}
+input[type="checkbox"] {
+  appearance: none; /* quita el estilo nativo del checkbox */
+  -webkit-appearance: none; /* Safari */
+  -moz-appearance: none; /* Firefox */
+  width: 20px; /* ajusta el tamaño del checkbox */
+  height: 20px; /* ajusta el tamaño del checkbox */
+  border-radius: 50%; /* convierte el checkbox en un círculo */
+  border: 1px solid #f8c20f; /* agrega un borde */
+  outline: none; /* quita el contorno predeterminado */
+  cursor: pointer; /* cambia el cursor al pasar el mouse */
+}
+
+/* Cambia el color de fondo al hacer clic en el checkbox */
+input[type="checkbox"]:checked {
+  background-color: yellow;
 }
 
 .cheack2 {

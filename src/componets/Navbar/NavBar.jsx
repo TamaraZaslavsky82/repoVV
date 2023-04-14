@@ -19,7 +19,7 @@ export default function NavBar() {
       <div className={style.container}>
      
         <Link to="/Voil">
-          <a className={style.voil}>Voil</a>
+          <a className={style.voil}>Voli</a>
         </Link>
         <Link to="/hotel">
           <a className={style.voil}>Hotel</a>

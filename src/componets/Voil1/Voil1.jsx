@@ -59,6 +59,7 @@ export default function Voil() {
                   type="checkbox"
                   checked={soloAndataChecked}
                   onChange={handleSoloAndataChange}
+                  
                 />
                 &nbsp;Solo Andata
               </label>
@@ -86,7 +87,7 @@ export default function Voil() {
         <div className={style.data3}>
           <SearchBar3 />
         </div>
-        <div>
+        <div className={style.containerB}>
           {mostrarFormulario ? (
             <div>
               <Form
@@ -102,7 +103,7 @@ export default function Voil() {
         </div>
       </div>
 
-      <h2 className={style.text}>È alla ricerca di offerte speciali??</h2>
+      <h2 className={style.text}>È alla ricerca di offerte speciali?</h2>
       <br />
       <p className={style.p1}>
         Si iscriva qui per ricevere offerte personalizzate e idee di viaggio
