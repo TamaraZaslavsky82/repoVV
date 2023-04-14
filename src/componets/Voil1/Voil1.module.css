@@ -6,39 +6,31 @@
 }
 
 .data {
-  margin-left: 600px;
+  margin-left: 100px;
   margin-top: -54px;
-  width: 63%;
+  
 }
 
-.data2 {
-  margin-left: 747px;
-  margin-top: -55px;
-  width: 63%;
-}
+
 
 .search {
-  margin-left: 275px;
-  margin-top: -55px;
-  margin-right: 105px;
+  margin-left: 40px;
+  margin-top: -56px;
+ width: 73%;
 }
 
 .search1 {
-  margin-right: 105px;
+  width: 50%;
 }
 
-.cerca {
-  margin-left: 1130px;
-  margin-top: -42px;
-}
 
 .button {
   border: none !important;
   background-color: rgb(250, 197, 21);
   padding: 8px;
   border-radius: 5px;
-  margin-left: 40px;
-  margin-top: 10px;
+  margin-left: 1140px;
+  margin-top: -90px;
 }
 
 .button2 {
@@ -94,11 +86,11 @@
 }
 
 .datar {
-  margin-left: 560px;
+  margin-left: 460px;
   margin-top: -57px;
 }
 .dataa {
-  margin-left: 730px;
+  margin-left: 650px;
   margin-top: -60px;
 }
 .data3 {
@@ -137,177 +129,4 @@
     margin-left: -1100px;
   }
   
-  @media only screen and (max-width: 600px) {
-    .data {
-      margin-left: 0;
-      margin-top: 10px;
-      width: 100%;
-    }
-    
-    .data2 {
-      margin-left: 0;
-      margin-top: 10px;
-      width: 100%;
-    }
-    
-    .search {
-      margin-left: 0;
-      margin-top: 10px;
-      margin-right: 0;
-    }
-    
-    .cerca {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-    
-    .button2 {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-    
-    .text {
-      margin-top: 50px;
-      margin-left: 0;
-    }
-    
-    .h4 {
-      margin-top: 30px;
-      margin-left: 0;
-    }
-    
-    .p2 {
-      margin-top: 20px;
-      margin-left: 0;
-    }
-    
-    .datar {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-    
-    .dataa {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-    
-    .data3 {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-    
-    .containerC {
-      margin-left: 0;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    
-    .form {
-      margin-left: 0;
-    }
-  }
   
-  @media only screen and (min-width: 601px) and (max-width: 1024px) {
-    .data {
-      margin-left: 150px;
-      margin-top: -54px;
-      width: 63%;
-    }
-    
-    .data2 {
-      margin-left: 290px;
-      margin-top: -55px;
-      width: 63%;
-    }
-    
-    .search {
-      margin-left: 75px;
-      margin-top: -55px;
-      margin-right: 50px;
-    }
-    
-    .cerca {
-      margin-left: 560px;
-      margin-top: -42px;
-    }
-    
-    .button2 {
-      margin-left: 570px;
-      margin-top: 25px;
-    }
-    
-    .text {
-      margin-top: 100px;
-      margin-left: 300px;
-    }
-    
-    .h4 {
-      margin-top: 50px;
-      margin-left: 270px;
-    }
-    
-    .p2 {
-      margin-top: 30px;
-      margin-left: 370px;
-    }
-    
-    .datar {
-      margin-left: 380px;
-      margin-top: -57px;
-    }
-    
-    .dataa {
-      margin-left: 550px;
-      margin-top: -60px;
-    }
-    
-    .data3 {
-      margin-left: 730px;
-      margin-top: -53px;
-    }
-    
-    .containerC {
-      margin-left: 200px;
-      margin-top: -25px;
-      margin-bottom: 30px;
-    }
-    
-    .form {
-      margin-left: -600px;
-    }
-  }
-  
-  /* Estilos para pantallas grandes */
-@media (min-width: 1200px) {
-  /* Ajustar margenes */
-  .container {
-    margin: 50px;
-  }
-  
-  /* Cambiar disposición de secciones */
-  .data {
-    float: left;
-    width: 60%;
-  }
-  
-  .data2 {
-    float: right;
-    width: 35%;
-  }
-  
-  /* Ajustar tamaño de fuente */
-  .text {
-    font-size: 24px;
-  }
-  
-  /* Ajustar tamaño de botones */
-  .button {
-    padding: 12px 24px;
-  }
-  
-  /* Ajustar tamaño de imágenes */
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}

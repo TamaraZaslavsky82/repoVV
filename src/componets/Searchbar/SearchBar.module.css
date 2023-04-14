@@ -12,11 +12,12 @@ input::placeholder {
 
 
 .input2 {
-  width: 30%;
-  margin-left: 30px;
+  width: 15%;
+  margin-left: 215px;
   padding: 7px;
   border-radius: 10px;
-}
+ 
+margin-top: -10px;}
 
 .icono {
   width: 15%;
@@ -25,14 +26,14 @@ input::placeholder {
 .data {
   padding: 8px;
   border-radius: 5px;
-  width: 58%;
+  width: 39%;
 
 }
 
 .data2 {
   padding: 8px;
   border-radius: 5px;
-  width: 45%;
+  width: 35%;
  
 }
 

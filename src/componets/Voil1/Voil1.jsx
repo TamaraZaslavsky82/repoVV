@@ -7,21 +7,18 @@ import SearchBar2 from "../Searchbar/SearchBar2";
 import SearchBarData2 from "../Searchbar/SearchBarData2";
 import SearchBar3 from "../Searchbar/SearchBar3";
 import Form from "../Form/Form";
-  
+
 export default function Voil() {
   const [soloAndataChecked, setSoloAndataChecked] = useState(false);
   const [andataERitornoChecked, setAndataERitornoChecked] = useState(false);
   const [searchBarDataEnabled, setSearchBarDataEnabled] = useState(true);
-
   const [mostrarFormulario, setMostrarFormulario] = useState(false);
- 
 
   const handleCercaClick = () => {
     setMostrarFormulario(true);
   };
 
   const handleFormularioSubmit = (datos) => {
-    
     setMostrarFormulario(false);
   };
 
@@ -40,6 +37,10 @@ export default function Voil() {
     }
     setSearchBarDataEnabled(true); // establece searchBarDataEnabled en true cuando se selecciona "andata e ritorno"
   };
+
+  const handleFormularioCancel = () => {
+    setMostrarFormulario(false);
+  }
 
   return (
     <div>
@@ -71,10 +72,10 @@ export default function Voil() {
         <div className={style.search}>
           <SearchBar2 />
         </div>
-        
-          <div className={style.datar}>
-            <SearchBarData />
-          </div>
+
+        <div className={style.datar}>
+          <SearchBarData />
+        </div>
         
         {searchBarDataEnabled && (
         <div className={style.dataa}>
@@ -85,12 +86,18 @@ export default function Voil() {
         <div className={style.data3}>
           <SearchBar3 />
         </div>
-        <div >
-        {mostrarFormulario ? (
-        <Form  className={style.form} onSubmit={handleFormularioSubmit} />
-      ) : (
-        <button className={style.button}onClick={handleCercaClick}>Cerca</button>
-      )}
+        <div>
+          {mostrarFormulario ? (
+            <div>
+              <Form
+                className={style.form}
+                onSubmit={handleFormularioSubmit}
+              />
+              <button className={style.button} onClick={handleFormularioCancel}>Cancelar</button>
+            </div>
+          ) : (
+            <button className={style.button} onClick={handleCercaClick}>Cerca</button>
+          )}
           
         </div>
       </div>

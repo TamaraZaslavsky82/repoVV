@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import style from "../Form/Form.module.css";
 
-export default function Formulario({ onSubmit }) {
+export default function Formulario() {
   const [email, setEmail] = useState("");
   const [numero, setNumero] = useState("");
   const [mensaje, setMensaje] = useState("");
@@ -10,10 +10,6 @@ export default function Formulario({ onSubmit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ email, numero });
-
-    setEmail("");
-    setNumero("");
 
     // Enviar formulario con emailjs
     emailjs
@@ -27,16 +23,24 @@ export default function Formulario({ onSubmit }) {
         (result) => {
           console.log(result.text);
           setMensaje("Mensaje enviado con éxito");
+          setMostrarVentanaEmergente(true);
+
+          setEmail("");
+          setNumero("");
         },
         (error) => {
           console.log(error.text);
           setMensaje("Error al enviar el mensaje");
+          setMostrarVentanaEmergente(true);
+
+          setEmail("");
+          setNumero("");
         }
       );
   };
 
   return (
-    <div className={style.formContainer}>
+    <div className={style.formContainer2}>
       <form onSubmit={handleSubmit} className={style.form}>
         <label className={style.nombre}>
           Email:&nbsp;

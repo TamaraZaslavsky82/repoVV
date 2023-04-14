@@ -12,6 +12,8 @@ import Dichiarazione from './componets/Dichiarazione/Dichiarazione.jsx';
 import VistoTuristico from './componets/VistiTuristico/VistoTuristico.jsx';
 import Voil1 from '../src/componets/Voil1/Voil1.jsx'
 import Iscriva from './componets/Iscriva/Iscriva.jsx';
+import Hotel from './componets/Hotel/Hotel.jsx';
+import Traduzione from './componets/Traduzione/Traduzione.jsx';
 
 const history = createBrowserHistory();
 
@@ -33,6 +35,8 @@ function App() {
           <Route path='/vistoturistico' element={<VistoTuristico/>} />
           <Route path='/voil' element={<Voil1/>} />
           <Route path='/iscriva' element={<Iscriva/>} />
+          <Route path='/hotel' element={<Hotel/>}/>
+          <Route path='/traduzione' element={<Traduzione/>} />
         </Routes>
       </div>
       <Footer/>
