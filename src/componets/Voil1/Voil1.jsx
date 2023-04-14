@@ -94,7 +94,7 @@ export default function Voil() {
                 className={style.form}
                 onSubmit={handleFormularioSubmit}
               />
-              <button className={style.button} onClick={handleFormularioCancel}>Cancelar</button>
+              
             </div>
           ) : (
             <button className={style.button} onClick={handleCercaClick}>Cerca</button>

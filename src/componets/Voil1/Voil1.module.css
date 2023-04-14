@@ -148,4 +148,107 @@ input[type="checkbox"]:checked {
     margin-left: -1100px;
   }
   
+  @media only screen and (max-width: 600px) {
+
+    body{
+      max-width: 600px;
+    }
+
+    
+    
+    .button2 {
+      border: none !important;
+      background-color: rgb(250, 197, 21);
+      padding: 8px;
+      border-radius: 5px;
+      margin-left: 250px;
+      margin-top: 25px;
+    }
+    .containerB{
+      margin-top: -35px;
+    }
+    
+    .button2:hover {
+      border: none !important;
+      background-color: rgb(53, 53, 51);
+      color: rgb(250, 197, 21);
+      padding: 8px;
+    }
+
+    
+    .text {
+      margin-top: 100px;
+      margin-left: 200px;
+    }
+    
+    .p1 {
+      margin-left: 200px;
+    }
+    
+    .h4 {
+      margin-top: 50px;
+      margin-left: 200px;
+    }
+    
+    .p2 {
+      margin-top: 30px;
+      margin-left: 200px;
+    }
+    
+    .p3 {
+      margin-left: 200px;
+      margin-top: 50px;
+      padding: 10px;
+      background-color: rgb(250, 197, 21);
+      width: 10%;
+      border-radius: 5px;
+    }
+    
+    .p3:hover {
+      background-color: rgb(53, 53, 51);
+      color: whitesmoke;
+    }
+
+    .search {
+      margin-left: -60px;
+      margin-top: -56px;
+     width:1100px;
+    }
+    
+    .search1 {
+      width:800px;
+      margin-left: -65px;
+      margin-top: -36px;
+      
+
+    }
+    
+
+    .datar {
+      margin-left: -30px;
+      margin-top:7px;
+      width: 980px;
+    }
+    .dataa {
+      margin-left: 120px;
+      margin-top: -60px;
+      width: 1100px;
+    }
+    .data3 {
+      margin-left: -30px;
+      margin-top: 13px;
+    }
+    .button {
+      border: none !important;
+      background-color: rgb(250, 197, 21);
+      padding: 8px;
+      border-radius: 5px;
+      margin-left: 180px;
+      margin-top: -90px;
+    }
+    
+    
+  }
+
+
   
