@@ -10,26 +10,24 @@ export default function NavBar() {
       <Link to="/registro">
         <button className={style.registro}>Registro</button>
       </Link>
-      <a href="" className={style.ayuda}>
-        Ayuda
-      </a>
         <Link to="/">
           <img src={logo} alt="logo" className={style.logo} />
         </Link>
+      <a href="" className={style.ayuda}>
+        Ayuda
+      </a>
       <div className={style.container}>
      
         <Link to="/Voil">
           <a className={style.voil}>Voli</a>
         </Link>
         <Link to="/hotel">
-          <a className={style.voil}>Hotel</a>
+          <a className={style.hotel}>Hotel</a>
         </Link>
         <Link to="/taxi">
           <a className={style.taxi}>Taxi da / per l' aeroporto</a>
         </Link>
-        <Link to="/traduzione">
-          <a className={style.traduzione}>Traduzione e Legalizzazione</a>
-        </Link>
+        
       
       <div className={style.menu3}>
         <Link to='/'>
@@ -58,6 +56,9 @@ export default function NavBar() {
             </Link>
           </li>
         </ul>
+        <Link to="/traduzione">
+          <a className={style.traduzione}>Traduzione e Legalizzazione</a>
+        </Link>
         </div>
         
       </div>

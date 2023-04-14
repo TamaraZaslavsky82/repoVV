@@ -41,9 +41,14 @@
   margin-left: -350px;
 }
 
+
+.hotel {
+  color: rgb(250, 197, 21);
+  margin-left: -350px;
+}
 .traduzione {
   color: rgb(250, 197, 21);
-  margin-left: 200px;
+  margin-left: 500px;
 }
 
 .voil {
@@ -101,40 +106,39 @@ a {
 
  @media only screen and (max-width: 600px) {
 
-  .nav {
-  padding: 5px;
-  }
+  
   
   .logo {
   width: 120px;
-  margin-left: -60px;
-  margin-top: 5px;
-  margin-bottom: 10px;
+  margin-left: -440px;
+
+  
   }
   
   .registro {
   margin-left: 5px;
   font-size: 12px;
+  margin-top: -200px;
   }
   
   .inicio {
-  margin-left: 50%;
-  transform: translateX(-50%);
+  margin-left: 350px;
+ 
   font-size: 12px;
   }
   
-  .ayuda {
-  margin-left: 5px;
-  font-size: 12px;
+  .ayuda{
+    margin-left: 350px;
+    font-size: 12px;
   }
   
   .visti {
-  margin-left: -120px;
+  margin-left: 10px;
   font-size: 12px;
   }
   
   .traduzione {
-  margin-left: 60px;
+  margin-left: 30px;
   font-size: 12px;
   }
   
@@ -144,12 +148,16 @@ a {
   }
   
   .taxi {
-  margin-left: 5px;
+  margin-left: 30px;
   margin-top: 0;
   font-size: 12px;
   }
-  
+  .hotel{
+margin-left: 20px;
+font-size: 12px;
+  }
   .menu3:hover .dropdown {
+    margin-left: 60px;
   left: 50%;
   transform: translateX(-50%);
   width: 80%;
