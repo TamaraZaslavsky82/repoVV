@@ -142,6 +142,7 @@ export default function home() {
               aria-hidden="true"
             ></span>
             <span className="visually-hidden">Next</span>
+     
           </button>
         </div>
       </div>
@@ -160,7 +161,6 @@ export default function home() {
         </p>
       </div>
 
-      <img src={passaporte} alt="passaporte" className={style.passaporte} />
       <hr className={style.linea} />
       <h5 className={style.centinaia}>
         Centinaia di recensioni positive. Scopri anche tu i giudizi dei nostri
