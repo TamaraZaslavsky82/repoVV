@@ -23,3 +23,9 @@
     color:whitesmoke;
     opacity: 20%;
 }
+@media (max-width: 300px){
+    .derechos{
+        margin-left:-20px;
+        width: 70%;
+    }
+}

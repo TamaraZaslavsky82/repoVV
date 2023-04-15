@@ -14,6 +14,7 @@ import Voil1 from '../src/componets/Voil1/Voil1.jsx'
 import Iscriva from './componets/Iscriva/Iscriva.jsx';
 import Hotel from './componets/Hotel/Hotel.jsx';
 import Traduzione from './componets/Traduzione/Traduzione.jsx';
+import style from './App.module.css'
 
 const history = createBrowserHistory();
 
@@ -22,9 +23,9 @@ function App() {
   const isRegistroRoute = location.pathname === '/registro';
 
   return (
-    <IntlProvider locale="en">
+    <IntlProvider locale="en" className={style.app}>
       {!isRegistroRoute && <NavBar />}
-      <div>
+      <div >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/learmore" element={<LearnMore />} />

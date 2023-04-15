@@ -1,86 +1,64 @@
 .container {
   background-color: rgb(53, 53, 51);
-  padding: 35px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 3vw; /* Cambiar los valores de padding a unidades relativas como vw */
+  margin-top: 2vw; /* Cambiar los valores de margin a unidades relativas como vw */
+  margin-bottom: 2vw;
 }
-
-.data {
-  margin-left: 100px;
-  margin-top: -54px;
-  
-}
-
-
 
 .search {
-  margin-left: 40px;
-  margin-top: -56px;
- width: 73%;
+  margin-left: 2vw; /* Cambiar los valores de margin a unidades relativas como vw */
+  margin-top: -6vw;
+  width: 60%;
 }
 
 .search1 {
-  width: 50%;
+  width: 35%;
 }
-
 
 .button {
   border: none !important;
   background-color: rgb(250, 197, 21);
-  padding: 8px;
-  border-radius: 5px;
-  margin-left: 1140px;
-  margin-top: -90px;
+  padding: 1vw; /* Cambiar los valores de padding a unidades relativas como vw */
+  border-radius: 2vw; /* Cambiar los valores de border-radius a unidades relativas como vw */
+  margin-left: 70vw; /* Cambiar los valores de margin a unidades relativas como vw */
+  margin-top: -10vw;
 }
 
 .button2 {
   border: none !important;
   background-color: rgb(250, 197, 21);
-  padding: 8px;
-  border-radius: 5px;
-  margin-left: 570px;
-  margin-top: 25px;
-}
-.containerB{
-  margin-top: -35px;
-}
-
-.button2:hover {
-  border: none !important;
-  background-color: rgb(53, 53, 51);
-  color: rgb(250, 197, 21);
-  padding: 8px;
-  border-radius: 5px;
-  margin-left: 570px;
-  margin-top: 25px;
+  padding: 1vw;
+  border-radius: 2vw;
+  margin-left: 35vw;
+  margin-top: 5vw;
 }
 
 .text {
-  margin-top: 100px;
-  margin-left: 400px;
+  margin-top: 10vw;
+  margin-left: 20vw;
 }
 
 .p1 {
-  margin-left: 200px;
+  margin-left: 10vw;
 }
 
 .h4 {
-  margin-top: 50px;
-  margin-left: 370px;
+  margin-top: 5vw;
+  margin-left: 18vw;
 }
 
 .p2 {
-  margin-top: 30px;
-  margin-left: 470px;
+  margin-top: 3vw;
+  margin-left: 28vw;
 }
 
 .p3 {
-  margin-left: 550px;
-  margin-top: 50px;
-  padding: 10px;
+  margin-left: 40vw;
+  margin-top: 5vw;
+  padding: 1vw;
   background-color: rgb(250, 197, 21);
-  width: 10%;
-  border-radius: 5px;
+  width: 8vw;
+  border-radius: 2vw;
 }
 
 .p3:hover {
@@ -89,166 +67,17 @@
 }
 
 .datar {
-  margin-left: 460px;
-  margin-top: -57px;
+  margin-left: 27vw;
+  margin-top: -6vw;
 }
+
 .dataa {
-  margin-left: 650px;
-  margin-top: -60px;
+  margin-left: 40vw;
+  margin-top: -6vw;
 }
+
 .data3 {
-  margin-left: 910px;
-  margin-top: -53px;
+  margin-left: 70vw;
+  margin-top: -5vw;
 }
 
-.cheack1 {
-  color: whitesmoke;
-
-  display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
-  
-}
-input[type="checkbox"] {
-  appearance: none; /* quita el estilo nativo del checkbox */
-  -webkit-appearance: none; /* Safari */
-  -moz-appearance: none; /* Firefox */
-  width: 20px; /* ajusta el tamaño del checkbox */
-  height: 20px; /* ajusta el tamaño del checkbox */
-  border-radius: 50%; /* convierte el checkbox en un círculo */
-  border: 1px solid #f8c20f; /* agrega un borde */
-  outline: none; /* quita el contorno predeterminado */
-  cursor: pointer; /* cambia el cursor al pasar el mouse */
-}
-
-/* Cambia el color de fondo al hacer clic en el checkbox */
-input[type="checkbox"]:checked {
-  background-color: yellow;
-}
-
-.cheack2 {
-  color: whitesmoke;
-  
-
-  display: inline-block; /* Opcional: puedes usar "inline-flex" si deseas aplicar flexbox a los elementos */
-}
-.containerC{
-    margin-top: -25PX;
-    margin-left: 200PX;
-    margin-bottom: 30PX;
-}
-  
-  input[type="checkbox"]:checked {
-    background-color: #f4bf42;
-  }
-
-  .label-text {
-    margin-left: 10px;
-  }
-  
-  .form{
-    margin-left: -1100px;
-  }
-  
-  @media only screen and (max-width: 600px) {
-
-    body{
-      max-width: 100%;
-    }
-
-    
-    
-    .button2 {
-      border: none !important;
-      background-color: rgb(250, 197, 21);
-      padding: 8px;
-      border-radius: 5px;
-      margin-left: 250px;
-      margin-top: 25px;
-    }
-    .containerB{
-      margin-top: -35px;
-    }
-    
-    .button2:hover {
-      border: none !important;
-      background-color: rgb(53, 53, 51);
-      color: rgb(250, 197, 21);
-      padding: 8px;
-    }
-
-    
-    .text {
-      margin-top: 100px;
-      margin-left: 50px;
-    }
-    
-    .p1 {
-      margin-left:50px;
-    }
-    
-    .h4 {
-      margin-top: 50px;
-      margin-left: 50px;
-    }
-    
-    .p2 {
-      margin-top: 30px;
-      margin-left: 100px;
-    }
-    
-    .p3 {
-      margin-left: 50px;
-      margin-top: 50px;
-      padding: 10px;
-      background-color: rgb(250, 197, 21);
-      width: 10%;
-      border-radius: 5px;
-    }
-    
-    .p3:hover {
-      background-color: rgb(53, 53, 51);
-      color: whitesmoke;
-    }
-
-    .search {
-      margin-left: -250px;
-      margin-top: 10px;
-     width:3300px;
-        }
-    
-    .search1 {
-      width:2000px;
-      margin-left: -65px;
-      margin-top: -36px;
-      
-
-    }
-    
-
-    .datar {
-      margin-left: -35px;
-      margin-top: 1px;
-      width: 3550px;
-    }
-    .dataa {
-      margin-left: -35px;
-      margin-top: 1px;
-      width: 3200px;
-    }
-    .data3 {
-      margin-left: -25px;
-      margin-top: 1px;
-    }
-    .button {
-      border: none !important;
-      background-color: rgb(250, 197, 21);
-      padding: 8px;
-      border-radius: 5px;
-      margin-left: 180px;
-      margin-top: -90px;
-    }
-    
-    
-  }
-
-
-  

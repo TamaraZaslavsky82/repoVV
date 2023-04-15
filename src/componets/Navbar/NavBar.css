@@ -1,0 +1,93 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  background-color: black;
+  color: yellow;
+  padding: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  max-width: 50%; /* reducir el tamaño del logo en un 30% */
+  height: auto; /* mantener la proporción de la imagen */
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.links-container a {
+  display: inline-block;
+  color: yellow;
+  text-decoration: none;
+  margin-right: 20px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.links-container a:hover,
+.links-container a:active {
+  border-color: gray;
+  color: gray;
+}
+
+.links-container ul {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.links-container ul.dropdown {
+  width: 200px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+/* Mostrar el menú desplegable solo para los enlaces que contienen la palabra "visti" en el atributo data-dropdown */
+.links-container a[href="/"]:hover ~ ul.dropdown[data-dropdown-menu*=visti] {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.links-container ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buttons-container button {
+  margin-right: 10px;
+}
+
+@media (max-width: 300px) {
+  .logo {
+    max-width: 30%;
+  }
+  .links-container a:nth-child(2), /* ocultar el segundo enlace */
+  .links-container a:nth-child(3), /* ocultar el tercer enlace */
+  .links-container a:nth-child(5), /* ocultar el quinto enlace */
+  .links-container ul.dropdown {
+    display: none; /* ocultar el menú desplegable */
+  }
+}

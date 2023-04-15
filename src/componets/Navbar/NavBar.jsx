@@ -1,39 +1,41 @@
-import React from "react";
-import style from '../Navbar/NavBar.module.css'
+
+
 import logo from "../../imagenes/logo.png";
 import { Link } from "react-router-dom";
+import "./NavBar.css";
 
-export default function NavBar() {
+import { useState } from 'react';
+
+
+
+function Nav() {
+  const [isHovering, setIsHovering] = useState(false);
+
   return (
-    <div className={style.nav}>
-      <button className={style.inicio}>Inicio</button>
-      <Link to="/registro">
-        <button className={style.registro}>Registro</button>
-      </Link>
+    <nav>
+      <div className="logo-container">
         <Link to="/">
-          <img src={logo} alt="logo" className={style.logo} />
+          <img src={logo} alt="logo" className="logo" />
         </Link>
-      <a href="" className={style.ayuda}>
-        Ayuda
-      </a>
-      <div className={style.container}>
-     
+      </div>
+      <div className="links-container">
         <Link to="/Voil">
-          <a className={style.voil}>Voli</a>
+          <a>Voli</a>
         </Link>
         <Link to="/hotel">
-          <a className={style.hotel}>Hotel</a>
+          <a>Hotel</a>
         </Link>
         <Link to="/taxi">
-          <a className={style.taxi}>Taxi da / per l' aeroporto</a>
+          <a>Taxi da / per l'aeroporto</a>
         </Link>
-        
-      
-      <div className={style.menu3}>
-        <Link to='/'>
-          <a className={style.visti}> Visti d'ingreso</a>
+        <Link
+          to="/"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
+          <a>Visti d'ingresso</a>
         </Link>
-        <ul className={style.dropdown}>
+        <ul className={`dropdown ${isHovering ? 'active' : ''}`} data-dropdown-menu="visti">
           <li>
             <Link to="/Ottomento">
               OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
@@ -51,19 +53,17 @@ export default function NavBar() {
           </li>
           <li>
             <Link to="/vistoturistico">
-              Visto Turistico per l’invito dei cittadini extracomunitari in
-              Italia
+              Visto Turistico per l’invito dei cittadini extracomunitari in Italia
             </Link>
           </li>
         </ul>
         <Link to="/traduzione">
-          <a className={style.traduzione}>Traduzione e Legalizzazione</a>
+          <a>Traduzione e Legalizzazione</a>
         </Link>
-        </div>
-        
       </div>
-      
-      
-    </div>
+    </nav>
   );
 }
+
+export default Nav;
+
