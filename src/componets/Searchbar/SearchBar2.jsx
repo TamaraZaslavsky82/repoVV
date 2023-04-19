@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { Form } from "react-bootstrap";
 import Select from "react-select";
 import data from "../../../src/data.js";
 import style from "../../componets/Searchbar/SearchBar.module.css";
 import icono from '../../../src/imagenes/icono.png'
 
-const SearchBar2 = () => {
+const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
   const [airports, setAirports] = useState([]);
 
@@ -41,19 +42,23 @@ const SearchBar2 = () => {
       <span>{label}</span>
     </div>
   );
-
+  
   console.log(filterAirports(searchValue)); // imprime los resultados en la consola
 
   return (
-    <Select
-      className={style.input2}
-      options={filterAirports(searchValue)}
-      onInputChange={(inputValue) => setSearchValue(inputValue)}
-      menuIsOpen={Boolean(searchValue)} // Establecer en `true` solo si `searchValue` tiene algún valor
-      formatOptionLabel={formatOptionLabel}
-      placeholder="DESTINAZIONE"
-    />
+    <Form>
+      <Form.Group controlId="formBasicSelect">
+        <Form.Label style={{ color: 'rgb(250, 197, 21)' }}>DESTINAZIONE</Form.Label>
+        <Select
+          options={filterAirports(searchValue)}
+          onInputChange={(inputValue) => setSearchValue(inputValue)}
+          menuIsOpen={Boolean(searchValue)}
+          formatOptionLabel={formatOptionLabel}
+          placeholder="Select an airport"
+        />
+      </Form.Group>
+    </Form>
   );
 };
 
-export default SearchBar2;
+export default SearchBar;

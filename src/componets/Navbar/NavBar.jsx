@@ -1,18 +1,14 @@
-
-
 import logo from "../../imagenes/logo.png";
 import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-import { useState } from 'react';
+import { useState } from "react";
 
-
-
-function Nav() {
+function NavBar() {
   const [isHovering, setIsHovering] = useState(false);
 
   return (
-    <nav>
+    <nav className="nav">
       <div className="logo-container">
         <Link to="/">
           <img src={logo} alt="logo" className="logo" />
@@ -20,22 +16,27 @@ function Nav() {
       </div>
       <div className="links-container">
         <Link to="/Voil">
-          <a>Voli</a>
+          <div>Voli</div>
         </Link>
         <Link to="/hotel">
-          <a>Hotel</a>
+          <div>Hotel</div>
         </Link>
         <Link to="/taxi">
-          <a>Taxi da / per l'aeroporto</a>
+          <div>Taxi da / per l'aeroporto</div>
         </Link>
         <Link
           to="/"
           onMouseEnter={() => setIsHovering(true)}
           onMouseLeave={() => setIsHovering(false)}
         >
-          <a>Visti d'ingresso</a>
+          <div>Visti d'ingresso</div>
         </Link>
-        <ul className={`dropdown ${isHovering ? 'active' : ''}`} data-dropdown-menu="visti">
+        <ul
+          className={`dropdown ${isHovering ? "active" : ""}`}
+          data-dropdown-menu="visti"
+          onMouseEnter={() => setIsHovering(true)}
+          onMouseLeave={() => setIsHovering(false)}
+        >
           <li>
             <Link to="/Ottomento">
               OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
@@ -57,13 +58,13 @@ function Nav() {
             </Link>
           </li>
         </ul>
+
         <Link to="/traduzione">
-          <a>Traduzione e Legalizzazione</a>
+          <div>Traduzione e Legalizzazione</div>
         </Link>
       </div>
     </nav>
   );
 }
 
-export default Nav;
-
+export default NavBar;

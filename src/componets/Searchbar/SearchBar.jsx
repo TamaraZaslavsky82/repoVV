@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Form } from "react-bootstrap";
 import Select from "react-select";
 import data from "../../../src/data.js";
 import style from "../../componets/Searchbar/SearchBar.module.css";
@@ -45,15 +46,18 @@ const SearchBar = () => {
   console.log(filterAirports(searchValue)); // imprime los resultados en la consola
 
   return (
-    <Select
-    
-    className={style.input} 
-      options={filterAirports(searchValue)}
-      onInputChange={(inputValue) => setSearchValue(inputValue)}
-      menuIsOpen={Boolean(searchValue)} // Establecer en `true` solo si `searchValue` tiene algún valor
-      formatOptionLabel={formatOptionLabel}
-      placeholder="CITTÀ DI PARTENZA"
-    />
+    <Form>
+      <Form.Group controlId="formBasicSelect">
+        <Form.Label style={{ color: 'rgb(250, 197, 21)' }}>PARTENZA</Form.Label>
+        <Select
+          options={filterAirports(searchValue)}
+          onInputChange={(inputValue) => setSearchValue(inputValue)}
+          menuIsOpen={Boolean(searchValue)}
+          formatOptionLabel={formatOptionLabel}
+          placeholder="Select an airport"
+        />
+      </Form.Group>
+    </Form>
   );
 };
 

@@ -40,7 +40,7 @@ export default function Voil() {
 
   const handleFormularioCancel = () => {
     setMostrarFormulario(false);
-  }
+  };
 
   return (
     <div>
@@ -53,23 +53,22 @@ export default function Voil() {
               onChange={handleAndataERitornoChange}
             />
             &nbsp; Andata e ritorno
-            <div className={style.containerC}>
+            <div>
               <label className={style.cheack1}>
                 <input
                   type="checkbox"
                   checked={soloAndataChecked}
                   onChange={handleSoloAndataChange}
-                  
                 />
                 &nbsp;Solo Andata
               </label>
             </div>
           </label>
         </div>
+
         <div className={style.search1}>
           <SearchBar />
         </div>
-
         <div className={style.search}>
           <SearchBar2 />
         </div>
@@ -77,30 +76,26 @@ export default function Voil() {
         <div className={style.datar}>
           <SearchBarData />
         </div>
-        
+
         {searchBarDataEnabled && (
-        <div className={style.dataa}>
-          <SearchBarData2 />
-          
-        </div>
+          <div className={style.dataa}>
+            <SearchBarData2 />
+          </div>
         )}
         <div className={style.data3}>
           <SearchBar3 />
         </div>
-        <div className={style.containerB}>
-          {mostrarFormulario ? (
-            <div>
-              <Form
-                className={style.form}
-                onSubmit={handleFormularioSubmit}
-              />
-              
-            </div>
-          ) : (
-            <button className={style.button} onClick={handleCercaClick}>Cerca</button>
-          )}
-          
-        </div>
+      </div>
+      <div className={style.bu}>
+        {mostrarFormulario ? (
+          <div>
+            <Form className={style.form} onSubmit={handleFormularioSubmit} />
+          </div>
+        ) : (
+          <button className={style.button} onClick={handleCercaClick}>
+            Cerca
+          </button>
+        )}
       </div>
 
       <h2 className={style.text}>È alla ricerca di offerte speciali?</h2>
@@ -124,6 +119,7 @@ export default function Voil() {
           <strong>Da lunedì a Sabato (10:00 - 20:00)</strong>
         </p>
       </div>
+
       <br />
     </div>
   );
