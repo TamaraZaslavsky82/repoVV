@@ -74,15 +74,30 @@
   margin-right: 10px;
 }
 
-@media (min-width: 400px) and (max-width: 992px) {
-  .logo {
-    width: 100%;
-  }
-  
+@media (min-width: 300px) and (max-width: 992px) {
   .nav{
     max-width: 1200px; /* Agrega un ancho máximo */
     width: 100%;
   }
+  .nav {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .logo-container {
+    width: 100%;
+    order: -1;
+    margin-bottom: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    max-width: 150px;
+  }
+  
   
   .links-container {
     display: flex;

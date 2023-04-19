@@ -12,3 +12,13 @@
 .form{
     background-color: rgb(250, 197, 21);
 }
+
+@media (min-width: 300px) and (max-width: 992px){
+    .foto{
+        margin-left: 25vw;
+    }
+    .p{
+        margin-left: 3vw;
+    }
+    
+}

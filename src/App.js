@@ -15,6 +15,7 @@ import Iscriva from './componets/Iscriva/Iscriva.jsx';
 import Hotel from './componets/Hotel/Hotel.jsx';
 import Traduzione from './componets/Traduzione/Traduzione.jsx';
 import style from './App.module.css'
+import Taxi from './componets/Taxi/Taxi.jsx';
 
 const history = createBrowserHistory();
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/iscriva' element={<Iscriva/>} />
           <Route path='/hotel' element={<Hotel/>}/>
           <Route path='/traduzione' element={<Traduzione/>} />
+          <Route path='/taxi' element={<Taxi/>} />
         </Routes>
       </div>
       <Footer/>
