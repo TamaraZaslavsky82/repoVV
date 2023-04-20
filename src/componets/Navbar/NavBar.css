@@ -48,3 +48,6 @@
 .text-yellow {
   color: yellow !important;
 }
+.bg-yellow {
+  background-color: yellow;
+}

@@ -13,7 +13,7 @@ function NavBar() {
   };
 
   return (
-    <Navbar bg="dark" expand="lg" expanded={expanded}>
+    <Navbar bg="dark" expand="lg" expanded={expanded} className="navbar-dark bg-yellow">
 
       <Container>
         <Navbar.Brand href="/">
