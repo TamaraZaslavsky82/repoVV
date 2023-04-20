@@ -29,3 +29,21 @@
     border: solid 1px ;
     margin-top: 30px;
 }
+@media (min-width: 300px) and (max-width: 992px){
+    .h2{
+        margin-left: 2vw;
+    }
+    .turismo{
+        margin-left: 1vw;
+        width: 100%;
+    }
+    .p1{
+        margin-left: 3vw;
+    }
+    .h3{
+        margin-left: 2vw;
+    }
+    .hr{
+        margin-left: -3vw;
+    }
+}

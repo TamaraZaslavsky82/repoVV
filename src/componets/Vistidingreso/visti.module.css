@@ -75,3 +75,40 @@ body{
     border: solid 1px ;
     margin-top: 30px;
 }
+
+@media (min-width: 300px) and (max-width: 992px){
+    .h2{
+margin-left: 3vw;
+    }
+    .h3{
+        margin-left: 2vw;
+    }
+    .billete{
+        width: 100%;
+        margin-left: 1vw;
+    }
+    .p1{
+        margin-left: 2vw;
+    }
+    .h4{
+        margin-left: 2vw;
+    }
+    .ul1{
+        margin-left: 2vw;
+    }
+    .h31{
+        margin-left: 4vw;
+    }
+    .p2{
+       margin-left: 4vw;
+    }
+    .h6{
+        margin-left: 5vw;
+    }
+    .ul2{
+        margin-left: 2vw;
+    }
+    .hr{
+        margin-left: 3vw;
+    }
+}

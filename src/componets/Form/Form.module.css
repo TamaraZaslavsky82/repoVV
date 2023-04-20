@@ -44,7 +44,7 @@
   }
 
   .formContainer2{
-    background-color: rgb(53, 53, 51);
+   
     width: 80%;
     padding: 5px;
     margin-left: 100px;
@@ -57,8 +57,19 @@
       width: 80%;
       padding: 5px;
       margin-top: 50px;
-      margin-left: -50px;
+      margin-left: -70px;
       
      
     }
+    .boton{
+      margin-top: 3vw;
+    }
+    .formContainer{
+     
+      width: 80%;
+      padding: 5px;
+      margin-left: 10px;
+    }
+  
+    
   }

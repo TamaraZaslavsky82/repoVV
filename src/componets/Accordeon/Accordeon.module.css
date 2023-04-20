@@ -9,9 +9,9 @@
         border-radius: 15px;
 }
 
-@media (max-width: 300px){
+@media (min-width: 300px) and (max-width: 992px){
     .conteiner {
-        width: 70%;
+        width: 60%;
 
     }
 }

@@ -23,9 +23,9 @@
     color:whitesmoke;
     opacity: 20%;
 }
-@media (max-width: 300px){
+@media (min-width: 300px) and (max-width: 992px){
     .derechos{
         margin-left:-20px;
-        width: 30%;
+        width: 100%;
     }
 }

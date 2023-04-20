@@ -29,3 +29,21 @@
     border: solid 1px ;
     margin-top: 60px;
 }
+@media (min-width: 300px) and (max-width: 992px){
+    .h2{
+        margin-left: 2vw;
+    }
+    .dichi{
+        width: 90%;
+        margin-left: 2vw;
+    }
+    .h3{
+        margin-left: 2vw;
+    }
+    .p{
+        margin-left: 2vw;
+    }
+    .hr{
+        margin-left: -3vw;
+    }
+}

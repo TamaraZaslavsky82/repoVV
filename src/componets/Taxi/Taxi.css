@@ -1,11 +1,19 @@
 .foto{
     margin-left: 25vw;
     
+    
+}
+.text{
+    margin-left: 5vw;
 }
 
 @media (min-width: 300px) and (max-width: 992px){
 .foto{
     width: 70%;
     margin-left: 20vw;
+}
+
+.text{
+    margin-left: 5vw;
 }
 }

@@ -77,3 +77,43 @@
     border: solid 1px ;
     margin-top: 30px;
 }
+@media (min-width: 300px) and (max-width: 992px){
+    .h2{
+        margin-left: 2vw;
+    }
+    .visto{
+        width: 90%;
+        margin-left: 4vw;
+    }
+    .h3{
+        margin-left: 2vw;
+    }
+    .h4{
+        margin-left: 2vw;
+    }
+    .p1{
+        margin-left: 2vw;
+    }
+    .ul{
+        margin-left: 2vw;
+    }
+    .li{
+        margin-left: 2vw;
+    }
+    .h31{
+        margin-left: 2vw;
+    }
+    .h6{
+        margin-left: 2vw;
+    }
+    .h41{
+        margin-left: 2vw;
+    }
+    .h21{
+        margin-left: 2vw;
+    }
+    .hr{
+        margin-left: 2vw;
+    }
+    
+}
