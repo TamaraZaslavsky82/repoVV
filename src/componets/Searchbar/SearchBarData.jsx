@@ -15,7 +15,7 @@ const SearchBarData = () => {
           selected={selectedDate}
           onChange={(date) => setSelectedDate(date)}
           placeholderText="Seleziona una data"
-          className="custom-datepicker"
+          className="custom-datepicker1"
           
 
         />
