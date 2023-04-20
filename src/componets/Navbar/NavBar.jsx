@@ -1,69 +1,67 @@
 import logo from "../../imagenes/logo.png";
 import { Link } from "react-router-dom";
+import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { useState } from "react";
 import "./NavBar.css";
 
-import { useState } from "react";
-
 function NavBar() {
-  const [isHovering, setIsHovering] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
-    <nav className="nav">
-      <div className="logo-container">
-        <Link to="/">
-          <img src={logo} alt="logo" className="logo" />
-        </Link>
-      </div>
-      <div className="links-container">
-        <Link to="/Voil">
-          <div>Voli</div>
-        </Link>
-        <Link to="/hotel">
-          <div>Hotel</div>
-        </Link>
-        <Link to="/taxi">
-          <div>Taxi da / per l'aeroporto</div>
-        </Link>
-        <Link
-          to="/"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          <div>Visti d'ingresso</div>
-        </Link>
-        <ul
-          className={`dropdown ${isHovering ? "active" : ""}`}
-          data-dropdown-menu="visti"
-          onMouseEnter={() => setIsHovering(true)}
-          onMouseLeave={() => setIsHovering(false)}
-        >
-          <li>
-            <Link to="/Ottomento">
-              OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
-            </Link>
-          </li>
-          <li>
-            <Link to="/assicurazione">
-              Assicurazione di viaggio per turismo/visto d’ingresso
-            </Link>
-          </li>
-          <li>
-            <Link to="/dichiarazione">
-              DICHIARAZIONE DI OSPITALITÀ PER EXTRACOMUNITARI
-            </Link>
-          </li>
-          <li>
-            <Link to="/vistoturistico">
-              Visto Turistico per l’invito dei cittadini extracomunitari in Italia
-            </Link>
-          </li>
-        </ul>
+    <Navbar bg="dark" expand="lg" expanded={expanded}>
 
-        <Link to="/traduzione">
-          <div>Traduzione e Legalizzazione</div>
-        </Link>
-      </div>
-    </nav>
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="logo" className="logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          onClick={() => setExpanded(expanded ? false : "expanded")}
+        />
+        <Navbar.Collapse
+          id="basic-navbar-nav"
+          onToggle={() => setExpanded(false)}
+        >
+          <Nav className="me-auto">
+            
+            <Nav.Link href="/Voil" className="text-yellow">Voli</Nav.Link>
+<Nav.Link href="/hotel" className="text-yellow">Hotel</Nav.Link>
+<NavDropdown
+               title={<span style={{ color: "yellow" }}>Visti d'ingresso</span>}
+              id="basic-nav-dropdown"
+              className="text-yellow"
+              style={{ color: "yellow" }}
+              show={showMenu}
+              onMouseOver={() => setShowMenu(true)}
+              onMouseOut={() => setShowMenu(false)}
+              onClick={(e) => e.preventDefault()}
+             
+            >
+              <NavDropdown.Item href="/Ottomento">
+                OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/assicurazione">
+                Assicurazione di viaggio per turismo/visto d’ingresso
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/dichiarazione">
+                DICHIARAZIONE DI OSPITALITÀ PER EXTRACOMUNITARI
+              </NavDropdown.Item>
+              <NavDropdown.Item href="/vistoturistico">
+                Visto Turistico per l’invito dei cittadini extracomunitari in Italia
+              </NavDropdown.Item>
+            </NavDropdown>
+<Nav.Link href="/taxi" className="text-yellow">Taxi da / per l'aeroporto</Nav.Link>
+<Nav.Link href="/traduzione" className="text-yellow">Traduzione e Legalizzazione</Nav.Link>
+
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
