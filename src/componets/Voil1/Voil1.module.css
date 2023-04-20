@@ -58,11 +58,12 @@ input[type="checkbox"]:checked {
 
 .button{
   border: none !important;
- color: rgb(250, 197, 21);
+ background-color: rgb(250, 197, 21);
   padding: 1vw;
-  border-radius: 0.2vw;
-  margin-left: 91vw;
-  margin-top: -6vw;
+  border-radius: 2vw;
+  margin-left: 9vw;
+  
+  width: 20%;
 }
  
 .button2 {
@@ -74,7 +75,7 @@ input[type="checkbox"]:checked {
   margin-top: 5vw;
 }
 .bu{
-  margin-top: -4vw;
+  margin-top: 2vw;
 }
 .text {
   margin-top: 10vw;
@@ -114,17 +115,19 @@ input[type="checkbox"]:checked {
   width: 100%;
 }
 .data3{
-  margin-top: 13vw;
-  margin-left: -8vw;
+  margin-top: 3vw;
+  margin-left: 8vw;
 }
 .datar{
-  margin-left: 1vw;
+  margin-left: 2vw;
+  width: 30%;
 }
 .dataa{
-  margin-left: 2vw;
+  margin-left: 15vw;
+width: 30%;
 }
 .bu{
   margin-top: -10vw;
-  margin-left: -9vw;
+  margin-left: 29vw;
 }
 }
