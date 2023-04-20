@@ -32,7 +32,7 @@ function NavBar() {
             <Nav.Link href="/Voil" className="text-yellow">Voli</Nav.Link>
 <Nav.Link href="/hotel" className="text-yellow">Hotel</Nav.Link>
 <NavDropdown
-               title={<span style={{ color: "yellow" }}>Visti d'ingresso</span>}
+               title={<span style={{ color: "rgb(250, 197, 21)" }}>Visti d'ingresso</span>}
               id="basic-nav-dropdown"
               className="text-yellow"
               style={{ color: "yellow" }}

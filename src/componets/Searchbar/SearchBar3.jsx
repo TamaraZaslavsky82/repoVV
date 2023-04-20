@@ -11,7 +11,11 @@ function SearchBar3() {
   const menuRef = useRef(null);
 
   function handleClickOutside(event) {
-    if (menuOpen && containerRef.current && !containerRef.current.contains(event.target)) {
+    if (
+      menuOpen &&
+      containerRef.current &&
+      !containerRef.current.contains(event.target)
+    ) {
       setMenuOpen(false);
     }
   }
@@ -24,94 +28,68 @@ function SearchBar3() {
   }, []);
 
   const totalPassengers = adults + children + infants;
-  const selectedText = totalPassengers > 0
-    ? `${totalPassengers} ${totalPassengers === 1 ? "Pasajero" : "Pasajeros"}`
-    : "Pasajeros";
 
-    return (
-      <div ref={containerRef}>
-        <div onClick={() => setMenuOpen(!menuOpen)}>
-          <span className={style.selectedText}>{selectedText}</span>
-        </div>
-        {menuOpen && (
-          <Dropdown show={menuOpen} onToggle={(isOpen) => setMenuOpen(isOpen)}>
-            <Dropdown.Toggle variant="light" id="dropdown-basic">
-              <span className={style.selectedText}>{selectedText}</span>
-            </Dropdown.Toggle>
-            <Dropdown.Menu className={style.menu} ref={menuRef}>
-              <div className={style.menuItem}>
-                <label htmlFor="adults" className={style.texto}>
-                  Adulti <p className={style.passager}>Più di 11 anni</p>{" "}
-                </label>
-                <div className={style.buttonsContainer}>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setAdults(Math.max(adults - 1, 0))}
-                  >
-                    -
-                  </Button>
-                  <span className={style.number}>{adults}</span>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setAdults(adults + 1)}
-                  >
-                    +
-                  </Button>
-                </div>
+  return (
+    <div ref={containerRef}>
+      <button style={{borderRadius: '5px', marginLeft: '-25px', backgroundColor:'rgb(250, 197, 21)', marginTop:'8px'}} onClick={() => setMenuOpen(!menuOpen)}>
+        <span>{totalPassengers > 0 ? `${totalPassengers} ` : ""}</span>
+        <span>Pasajero{totalPassengers === 1 ? "" : "s"}</span>
+      </button>
+      {menuOpen && (
+        <Dropdown show={menuOpen} onToggle={(isOpen) => setMenuOpen(isOpen)}>
+          <Dropdown.Toggle variant="light" id="dropdown-basic">
+            <span>{totalPassengers > 0 ? `${totalPassengers} ` : ""}</span>
+          </Dropdown.Toggle>
+          <Dropdown.Menu className={style.menu} ref={menuRef}>
+            <div className={style.menuItem}>
+              <label htmlFor="adults" className={style.texto}>
+                Adulti <p className={style.passager}>Più di 11 anni</p>{" "}
+              </label>
+              <div className={style.buttonsContainer}>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setAdults(Math.max(adults - 1, 0))}
+                >
+                  -
+                </Button>
+                <span className={style.number}>{adults}</span>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setAdults(adults + 1)}
+                >
+                  +
+                </Button>
               </div>
-              <div className={style.menuItem}>
-                <label htmlFor="children" className={style.texto}>
-                  Bambini <p className={style.passager}>Da 2 a 11 anni</p>{" "}
-                </label>
-                <div className={style.buttonsContainer}>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setChildren(Math.max(children - 1, 0))}
-                  >
-                    -
-                  </Button>
-                  <span className={style.number}>{children}</span>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setChildren(children + 1)}
-                  >
-                    +
-                  </Button>
-                </div>
+            </div>
+            <div className={style.menuItem}>
+              <label htmlFor="children" className={style.texto}>
+                Bambini <p className={style.passager}>Da 2 a 11 anni</p>{" "}
+              </label>
+              <div className={style.buttonsContainer}>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setChildren(Math.max(children - 1, 0))}
+                >
+                  -
+                </Button>
+                <span className={style.number}>{children}</span>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setChildren(children + 1)}
+                >
+                  +
+                </Button>
               </div>
-              <div className={style.menuItem}>
-                <label htmlFor="infants" className={style.texto}>
-                  Neonato <p className={style.passager}>Meno di 2 anni</p>{" "}
-                </label>
-                <div className={style.buttonsContainer}>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setInfants(Math.max(infants - 1, 0))}
-                  >
-                    -
-                  </Button>
-                  <span className={style.number}>{infants}</span>
-                  <Button
-                    className={style.button}
-                    variant="secondary"
-                    onClick={() => setInfants(infants + 1)}
-                  >
-                    +
-                  </Button>
-                </div>
-              </div>
-            </Dropdown.Menu>
-          </Dropdown>
-        )}
-   
-      </div>
-    )}
-        
-    export default SearchBar3;
-    
+            </div>
+          </Dropdown.Menu>
+        </Dropdown>
+      )}
+    </div>
+  );
+}
 
+export default SearchBar3;

@@ -23,12 +23,12 @@
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .dropdown-toggle {
-  color: yellow !important;
+  color:rgb(250, 197, 21) ;
 }
 
 /* Ajustes para los links en amarillo */
 .navbar-dark .navbar-nav .nav-link {
-  color: yellow !important;
+  color:rgb(250, 197, 21) ;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -37,7 +37,7 @@
 }
 
 .dropdown-item {
-  color: yellow !important;
+  color:rgb(250, 197, 21) ;
 }
 
 .dropdown-item:hover {
@@ -46,8 +46,5 @@
 }
 
 .text-yellow {
-  color: yellow !important;
-}
-.bg-yellow {
-  background-color: yellow;
+  color:rgb(250, 197, 21) ;
 }
