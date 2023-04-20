@@ -58,11 +58,11 @@ input[type="checkbox"]:checked {
 
 .button{
   border: none !important;
-  background-color: rgb(250, 197, 21);
+ color: rgb(250, 197, 21);
   padding: 1vw;
   border-radius: 0.2vw;
-  margin-left: 95vw;
-  margin-top: -10vw;
+  margin-left: 91vw;
+  margin-top: -6vw;
 }
  
 .button2 {

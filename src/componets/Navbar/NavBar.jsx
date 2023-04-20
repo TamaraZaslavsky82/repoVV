@@ -42,16 +42,16 @@ function NavBar() {
               onClick={(e) => e.preventDefault()}
              
             >
-              <NavDropdown.Item href="/Ottomento">
+              <NavDropdown.Item as={Link} to="/Ottomento">
                 OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
               </NavDropdown.Item>
-              <NavDropdown.Item href="/assicurazione">
+              <NavDropdown.Item as={Link} to="/assicurazione">
                 Assicurazione di viaggio per turismo/visto d’ingresso
               </NavDropdown.Item>
-              <NavDropdown.Item href="/dichiarazione">
+              <NavDropdown.Item as={Link} to="/dichiarazione">
                 DICHIARAZIONE DI OSPITALITÀ PER EXTRACOMUNITARI
               </NavDropdown.Item>
-              <NavDropdown.Item href="/vistoturistico">
+              <NavDropdown.Item as={Link} to="/vistoturistico">
                 Visto Turistico per l’invito dei cittadini extracomunitari in Italia
               </NavDropdown.Item>
             </NavDropdown>
