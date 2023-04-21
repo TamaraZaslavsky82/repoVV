@@ -33,7 +33,7 @@ function SearchBar3() {
     <div ref={containerRef}>
       <button style={{borderRadius: '5px', marginLeft: '-25px', backgroundColor:'white', marginTop:'2px', padding:'7px'}} onClick={() => setMenuOpen(!menuOpen)}>
         <span>{totalPassengers > 0 ? `${totalPassengers} ` : ""}</span>
-        <span>Pasajero{totalPassengers === 1 ? "" : "s"}</span>
+        <span>Passeggeri{totalPassengers === 1 ? "" : "s"}</span>
       </button>
       {menuOpen && (
         <Dropdown show={menuOpen} onToggle={(isOpen) => setMenuOpen(isOpen)}>
@@ -80,6 +80,28 @@ function SearchBar3() {
                   className={style.button}
                   variant="secondary"
                   onClick={() => setChildren(children + 1)}
+                >
+                  +
+                </Button>
+              </div>
+            </div>
+            <div className={style.menuItem}>
+              <label htmlFor="children" className={style.texto}>
+                Bambini <p className={style.passager}>Da 0 a 12 mes</p>{" "}
+              </label>
+              <div className={style.buttonsContainer}>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setInfants(Math.max(infants - 1, 0))}
+                >
+                  -
+                </Button>
+                <span className={style.number}>{infants}</span>
+                <Button
+                  className={style.button}
+                  variant="secondary"
+                  onClick={() => setInfants(infants + 1)}
                 >
                   +
                 </Button>

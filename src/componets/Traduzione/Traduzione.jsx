@@ -14,7 +14,7 @@ function Traduzione() {
         Offriamo un servizio professionale ed efficiente per il disbrigo delle
         pratiche per i cittadini Cubani:
       </p>
-      <ul>
+      <ul className={style.u}>
         <li>richiesta, traduzione e legalizzazione di documenti</li>
         <li>spedizione documenti dall’Italia verso paesi extra UE</li>
       </ul>
