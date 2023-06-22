@@ -55,7 +55,7 @@
   @media only screen and (max-width: 600px){
     .form{
       background-color: rgb(53, 53, 51);
-      width: 90%;
+      width: 100%;
       padding: 5px;
       margin-top: 50px;
       margin-left: -60px;

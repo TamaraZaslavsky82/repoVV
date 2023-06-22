@@ -138,4 +138,7 @@ input[type="checkbox"]:checked {
     margin-left: 50vw;
     margin-top: 0.5vw;
   }
+  .form{
+    margin-left: 10vw;
+  }
 }

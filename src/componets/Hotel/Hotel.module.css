@@ -9,9 +9,7 @@
     margin-top: 20px;
 }
 
-.form{
-    background-color: rgb(250, 197, 21);
-}
+
 
 @media (min-width: 300px) and (max-width: 992px){
     .foto{
@@ -20,5 +18,8 @@
     .p{
         margin-left: 3vw;
     }
-    
+    .form2{
+        margin-left: 20vw;
+        width: 90%;
+    }
 }
