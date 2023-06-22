@@ -31,7 +31,7 @@ function SearchBar3() {
 
   return (
     <div ref={containerRef}>
-      <button style={{borderRadius: '5px', marginLeft: '-25px', backgroundColor:'white', marginTop:'2px', padding:'7px'}} onClick={() => setMenuOpen(!menuOpen)}>
+      <button  onClick={() => setMenuOpen(!menuOpen)}>
         <span>{totalPassengers > 0 ? `${totalPassengers} ` : ""}</span>
         <span>Passeggeri{totalPassengers === 1 ? "" : "s"}</span>
       </button>

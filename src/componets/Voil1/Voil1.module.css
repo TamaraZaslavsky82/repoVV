@@ -32,7 +32,7 @@ margin-left: -10vw;
 
 .data3{
   margin-left:-2vw;
-  margin-top: 5.8vw;
+  margin-top: 7vw;
   color:rgb(250, 197, 21);
 }
 .react-datepicker__input-container input {
@@ -67,8 +67,8 @@ input[type="checkbox"]:checked {
  background-color: rgb(250, 197, 21);
  padding: 0.4vw;
   border-radius: 0.5vw;
-  margin-left: 81vw;
-  margin-top: -5.4vw;
+  margin-left: 91vw;
+  margin-top: -3.9vw;
   width: 3.5%;
 }
  
@@ -80,11 +80,7 @@ input[type="checkbox"]:checked {
   margin-left: 35vw;
   margin-top: 5vw;
 }
-.bu{
-  margin-top: 1.5vw;
-  margin-left: 8vw;
-  width: 100%;
-}
+
 .text {
   margin-top: 10vw;
   margin-left: 20vw;
@@ -124,7 +120,7 @@ input[type="checkbox"]:checked {
     width: 100%;
   }
   .data3 {
-    margin-top: 23vw;
+    margin-top: 25vw;
     margin-left: -55vw;
   }
   .datar,
@@ -139,6 +135,7 @@ input[type="checkbox"]:checked {
 
   .button{
     width: 13%;
-    margin-left: 40vw;
+    margin-left: 50vw;
+    margin-top: 0.5vw;
   }
 }
