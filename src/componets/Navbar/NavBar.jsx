@@ -13,34 +13,26 @@ function NavBar() {
   };
 
   return (
-    <Navbar bg="dark" expand="lg" expanded={expanded} className="navbar-dark bg-yellow">
-
+    <Navbar expand="lg" expanded={expanded} className="navbar-dark bg-dark">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand as={Link} to="/">
           <img src={logo} alt="logo" className="logo" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
-          onClick={() => setExpanded(expanded ? false : "expanded")}
+          onClick={() => setExpanded(!expanded)}
         />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          onToggle={() => setExpanded(false)}
-        >
+        <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            
-            <Nav.Link href="/Voil" className="text-yellow">Voli</Nav.Link>
-<Nav.Link href="/hotel" className="text-yellow">Hotel</Nav.Link>
-<NavDropdown
-               title={<span style={{ color: "rgb(250, 197, 21)" }}>Visti d'ingresso</span>}
+            <Nav.Link as={Link} to="/Voil" className="text-yellow">Voli</Nav.Link>
+            <Nav.Link as={Link} to="/hotel" className="text-yellow">Hotel</Nav.Link>
+            <NavDropdown
+              title="Visti d'ingresso"
               id="basic-nav-dropdown"
               className="text-yellow"
-              style={{ color: "yellow" }}
               show={showMenu}
-              onMouseOver={() => setShowMenu(true)}
-              onMouseOut={() => setShowMenu(false)}
-              onClick={(e) => e.preventDefault()}
-             
+              onMouseEnter={() => setShowMenu(true)}
+              onMouseLeave={() => setShowMenu(false)}
             >
               <NavDropdown.Item as={Link} to="/Ottomento">
                 OTTENIMENTO VISTO PER CITTADINI EXTRACOMUNITARI
@@ -55,9 +47,8 @@ function NavBar() {
                 Visto Turistico per l’invito dei cittadini extracomunitari in Italia
               </NavDropdown.Item>
             </NavDropdown>
-<Nav.Link href="/taxi" className="text-yellow">Taxi da / per l'aeroporto</Nav.Link>
-<Nav.Link href="/traduzione" className="text-yellow">Traduzione e Legalizzazione</Nav.Link>
-
+            <Nav.Link as={Link} to="/taxi" className="text-yellow">Taxi da / per l'aeroporto</Nav.Link>
+            <Nav.Link as={Link} to="/traduzione" className="text-yellow">Traduzione e Legalizzazione</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

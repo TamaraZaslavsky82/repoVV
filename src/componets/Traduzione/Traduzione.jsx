@@ -1,7 +1,7 @@
 import React from "react";
 import traducciones from "../../../src/imagenes/traducciones.png";
 import style from '../../componets/Traduzione/Traduzione.module.css'
-import Form2 from '../../../src/componets/Form/Form2'
+import Form from '../../../src/componets/Form/Form.jsx'
 
 function Traduzione() {
   return (
@@ -18,7 +18,8 @@ function Traduzione() {
         <li>richiesta, traduzione e legalizzazione di documenti</li>
         <li>spedizione documenti dall’Italia verso paesi extra UE</li>
       </ul>
-      <Form2/>
+      <div style={{marginLeft:'60px'}}> <Form/></div>
+     
     </div>
   );
 }

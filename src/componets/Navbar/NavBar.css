@@ -1,34 +1,11 @@
-.navbar-nav .nav-link:hover {
-  color: #ffffff !important;
-}
-
-.dropdown-menu {
-  background-color: #f8f9fa !important;
-  border: none !important;
-  border-radius: 0px !important;
-}
-
-.dropdown-menu a {
-  color: #000000 !important;
-}
-
-.dropdown-menu a:hover {
-  color: #ffffff !important;
-  background-color: #6c757d !important;
-}
-
-.navbar-brand .logo {
-  width: 100px !important;
-}
-
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .dropdown-toggle {
-  color:rgb(250, 197, 21) ;
+  color: rgb(250, 197, 21);
 }
 
 /* Ajustes para los links en amarillo */
 .navbar-dark .navbar-nav .nav-link {
-  color:rgb(250, 197, 21) ;
+  color: rgb(250, 197, 21);
 }
 
 .navbar-dark .navbar-nav .nav-link:hover,
@@ -37,7 +14,7 @@
 }
 
 .dropdown-item {
-  color:rgb(250, 197, 21) ;
+  color: rgb(250, 197, 21);
 }
 
 .dropdown-item:hover {
@@ -46,5 +23,36 @@
 }
 
 .text-yellow {
-  color:rgb(250, 197, 21) ;
+  color: rgb(250, 197, 21);
+}
+ .logo{
+  width: 20%;
+ }
+
+/* Ajustes para el drop-down en modo responsive */
+@media (max-width: 767px) {
+  .navbar-nav .nav-link,
+  .dropdown-toggle {
+    padding: 0.3rem 1rem;
+    color: #ffffff;
+    background-color: #343a40;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-nav .dropdown-menu {
+    background-color: #343a40;
+    top: 100%; /* Ajusta la posición vertical del menú desplegable */
+    min-width: 30%; /* Ajusta el ancho mínimo del menú desplegable */
+  }
+
+  .navbar-nav .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: rgb(250, 197, 21);
+    font-size:x-small;
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    color: #ffffff !important;
+    background-color: #6c757d !important;
+  }
 }

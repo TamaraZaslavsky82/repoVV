@@ -1,16 +1,17 @@
-import React from 'react'
-import bd from '../../imagenes/bd.webp'
-import Form2  from  '../../componets/Form/Form2.jsx'
-import '../../componets/Taxi/Taxi.css'
+import React from 'react';
+import bd from '../../imagenes/bd.webp';
+import Form from '../../componets/Form/Form.jsx';
+import '../../componets/Taxi/Taxi.css';
 
 function Taxi() {
   return (
     <div>
-        <img src={bd} className='foto'/>
-        <p className='text'>Lasciaci un messaggio e ti contatteremo a breve.</p>
-       <Form2/>
+      <img src={bd} className='foto' alt='Taxi' />
+      <p className='text'>Lasciaci un messaggio e ti contatteremo a breve.</p>
+      <div style={{marginLeft:'60px'}}><Form /></div>
+      
     </div>
-  )
+  );
 }
 
-export default Taxi
+export default Taxi;

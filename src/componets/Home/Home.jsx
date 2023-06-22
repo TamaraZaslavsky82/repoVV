@@ -166,8 +166,8 @@ export default function home() {
         Centinaia di recensioni positive. Scopri anche tu i giudizi dei nostri
         clienti!
       </h5>
-      <img src={google} alt="google" className={style.google} />
-      <img src={insignia} alt="insignia" className={style.insignia} />
+      <img src={google} alt="google" style={{width:'10%'}} />
+      <img src={insignia} alt="insignia" style={{width:'10%'}} />
     </div>
   );
 }

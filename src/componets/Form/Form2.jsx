@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
-import style from "../Form/Form.module.css";
+import style from "../Form/Form2.module.css";
 
 export default function Formulario() {
   const [email, setEmail] = useState("");
   const [numero, setNumero] = useState("");
   const [mensaje, setMensaje] = useState("");
-  const [mostrarVentanaEmergente, setMostrarVentanaEmergente] = useState(false);
+  const [mostrarVentanaEmergente, setMostrarVentanaEmergente] = useState(
+    false
+  );
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -65,11 +67,17 @@ export default function Formulario() {
       {mostrarVentanaEmergente && (
         <div
           className={
-            mensaje.includes("Error") ? style.errorWindow : style.successWindow
+            mensaje.includes("Error")
+              ? `${style.errorWindow} ${style.show}`
+              : `${style.successWindow} ${style.show}`
           }
         >
           <p
-            className={mensaje.includes("Error") ? style.error : style.success}
+            className={
+              mensaje.includes("Error")
+                ? `${style.error} ${style.show}`
+                : `${style.success} ${style.show}`
+            }
           >
             {mensaje}
           </p>

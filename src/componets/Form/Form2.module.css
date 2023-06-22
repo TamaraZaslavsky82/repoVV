@@ -1,24 +1,24 @@
-.form{
+.form {
     margin-top: 30px;
-}
-
-.nombre{
-    color:rgb(55, 54, 54);
+  }
+  
+  .nombre {
+    color: rgb(55, 54, 54);
     margin-left: 20px;
-}
-
-.boton{
+  }
+  
+  .boton {
     margin-left: 10px;
     border: none;
     background-color: rgb(250, 197, 21);
     border-radius: 5px;
-}
-
-.p{
-    color:rgb(54, 53, 53);
-}
-
-.success {
+  }
+  
+  .p {
+    color: rgb(54, 53, 53);
+  }
+  
+  .success {
     color: #155724;
     background-color: #d4edda;
     border: 1px solid #c3e6cb;
@@ -31,46 +31,51 @@
     color: #721c24;
     background-color: #f8d7da;
     border: 1px solid #f5c6cb;
-    padding: 10px;
+    padding: 9px;
     border-radius: 5px;
     margin-top: 10px;
   }
-
-  .formContainer{
- 
+  
+  .formContainer {
+    background-color: rgb(151, 151, 68);
     width: 80%;
+    padding: 5px;
+  }
+  
+  .formContainer2 {
+    width: 50%;
     padding: 5px;
     margin-left: 10px;
-  }
-
-  .formContainer2{
-   
-    width: 80%;
-    padding: 5px;
-    margin-left: 100px;
     margin-top: 50px;
-    
   }
-
-  @media only screen and (max-width: 600px){
-    .form{
+  
+  @media only screen and (max-width: 600px) {
+    .form {
       background-color: rgb(53, 53, 51);
-      width: 90%;
+      width: 80%;
       padding: 5px;
       margin-top: 50px;
       margin-left: -60px;
-      
-     
     }
-    .boton{
+  
+    .boton {
       margin-top: 3vw;
     }
-    .formContainer{
-     
+  
+    .formContainer {
       width: 80%;
       padding: 5px;
       margin-left: 9px;
     }
   
-    
+    .error {
+      color: #721c24;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      padding: 5px;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-right: 100px;
+    }
   }
+  
