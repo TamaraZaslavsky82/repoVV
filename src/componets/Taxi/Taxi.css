@@ -1,13 +1,16 @@
-.foto {
+.fototaxi {
     margin-left: 25vw;
+    border-radius: 30px;
+    margin-top: 10px;
   }
   
   .text {
-    margin-left: 5vw;
+    margin-left: 30vw;
+    margin-top: 5vw;
   }
   
   @media (min-width: 300px) and (max-width: 992px) {
-    .foto {
+    .fototaxi {
       width: 70%;
       margin-left: 2vw;
     }

@@ -6,7 +6,7 @@ import '../../componets/Taxi/Taxi.css';
 function Taxi() {
   return (
     <div>
-      <img src={bd} className='foto' alt='Taxi' />
+      <img src={bd} className='fototaxi' alt='Taxi' />
       <p className='text'>Lasciaci un messaggio e ti contatteremo a breve.</p>
       <div style={{marginLeft:'60px'}}><Form /></div>
       
