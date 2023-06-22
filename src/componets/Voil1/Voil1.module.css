@@ -11,11 +11,12 @@ width: 100%;
 .search {
 margin-top: 4vw;
   width: 20%;
+  margin-right: 5vw;
 }
 
 .search1 {
   margin-top: 4vw;
-  
+margin-left: -10vw;
   width: 20%;
 }
 
@@ -80,7 +81,9 @@ input[type="checkbox"]:checked {
   margin-top: 5vw;
 }
 .bu{
-  margin-top: 2vw;
+  margin-top: 1.5vw;
+  margin-left: 8vw;
+  width: 100%;
 }
 .text {
   margin-top: 10vw;
